@@ -19,6 +19,7 @@ git grep -l "upbound/provider-aws" -- ${REPLACE_FILES} | xargs sed -i.bak "s|upb
 sed -i.bak "s|upbound/provider-aws|${ORGANIZATION_NAME}/${PROVIDER_NAME_LOWER}|g" go.mod
 sed -i.bak "s|PROJECT_REPO := github.com/upbound/|PROJECT_REPO := github.com/${ORGANIZATION_NAME}/|g" Makefile
 sed -i.bak "s|PROJECT_NAME := provider-aws|PROJECT_NAME := ${PROVIDER_NAME_LOWER}|g" Makefile
+sed -i.bak "s|IMAGES = provider-aws|IMAGES = ${PROVIDER_NAME_LOWER}|g" Makefile
 
 # Clean up the .bak files created by sed
 git clean -fd

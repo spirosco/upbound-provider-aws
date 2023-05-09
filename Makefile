@@ -86,7 +86,7 @@ export UP_CHANNEL := $(UP_CHANNEL)
 # Setup Images
 
 REGISTRY_ORGS ?= xpkg.upbound.io/upbound
-IMAGES = provider-aws
+IMAGES = upbound-provider-aws
 -include build/makelib/imagelight.mk
 
 # ====================================================================================
