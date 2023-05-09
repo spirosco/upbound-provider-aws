@@ -1,7 +1,7 @@
 # ====================================================================================
 # Setup Project
 
-PROJECT_NAME := provider-aws
+PROJECT_NAME := upbound-provider-aws
 PROJECT_REPO := github.com/spirosco/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION := 1.2.1
