@@ -23,7 +23,7 @@ sed -i.bak "s|PROJECT_REPO := github.com/upbound/|PROJECT_REPO := github.com/${O
 git clean -fd
 
 #git mv "internal/clients/template.go" "internal/clients/${PROVIDER_NAME_LOWER}.go"
-git mv "cluster/imagesprovider-aws" "cluster/images/${PROVIDER_NAME_LOWER}"
+git mv "cluster/images/provider-aws" "cluster/images/${PROVIDER_NAME_LOWER}"
 
 # We need to remove this api folder otherwise first `make generate` fails with
 # the following error probably due to some optimizations in go generate with v1.17:
