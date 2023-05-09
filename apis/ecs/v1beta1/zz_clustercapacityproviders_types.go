@@ -62,7 +62,7 @@ type ClusterCapacityProvidersParameters struct {
 	CapacityProviders []*string `json:"capacityProviders,omitempty" tf:"capacity_providers,omitempty"`
 
 	// Name of the ECS cluster to manage capacity providers for.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecs/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecs/v1beta1.Cluster
 	// +kubebuilder:validation:Optional
 	ClusterName *string `json:"clusterName,omitempty" tf:"cluster_name,omitempty"`
 

@@ -9,14 +9,14 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	apidestination "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/apidestination"
-	archive "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/archive"
-	bus "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/bus"
-	buspolicy "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/buspolicy"
-	connection "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/connection"
-	permission "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/permission"
-	rule "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/rule"
-	target "github.com/upbound/provider-aws/internal/controller/cloudwatchevents/target"
+	apidestination "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/apidestination"
+	archive "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/archive"
+	bus "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/bus"
+	buspolicy "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/buspolicy"
+	connection "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/connection"
+	permission "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/permission"
+	rule "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/rule"
+	target "github.com/spirosco/upbound-provider-aws/internal/controller/cloudwatchevents/target"
 )
 
 // Setup_cloudwatchevents creates all controllers with the supplied logger and adds them to

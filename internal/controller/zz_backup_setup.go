@@ -9,16 +9,16 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	framework "github.com/upbound/provider-aws/internal/controller/backup/framework"
-	globalsettings "github.com/upbound/provider-aws/internal/controller/backup/globalsettings"
-	plan "github.com/upbound/provider-aws/internal/controller/backup/plan"
-	regionsettings "github.com/upbound/provider-aws/internal/controller/backup/regionsettings"
-	reportplan "github.com/upbound/provider-aws/internal/controller/backup/reportplan"
-	selection "github.com/upbound/provider-aws/internal/controller/backup/selection"
-	vault "github.com/upbound/provider-aws/internal/controller/backup/vault"
-	vaultlockconfiguration "github.com/upbound/provider-aws/internal/controller/backup/vaultlockconfiguration"
-	vaultnotifications "github.com/upbound/provider-aws/internal/controller/backup/vaultnotifications"
-	vaultpolicy "github.com/upbound/provider-aws/internal/controller/backup/vaultpolicy"
+	framework "github.com/spirosco/upbound-provider-aws/internal/controller/backup/framework"
+	globalsettings "github.com/spirosco/upbound-provider-aws/internal/controller/backup/globalsettings"
+	plan "github.com/spirosco/upbound-provider-aws/internal/controller/backup/plan"
+	regionsettings "github.com/spirosco/upbound-provider-aws/internal/controller/backup/regionsettings"
+	reportplan "github.com/spirosco/upbound-provider-aws/internal/controller/backup/reportplan"
+	selection "github.com/spirosco/upbound-provider-aws/internal/controller/backup/selection"
+	vault "github.com/spirosco/upbound-provider-aws/internal/controller/backup/vault"
+	vaultlockconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/backup/vaultlockconfiguration"
+	vaultnotifications "github.com/spirosco/upbound-provider-aws/internal/controller/backup/vaultnotifications"
+	vaultpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/backup/vaultpolicy"
 )
 
 // Setup_backup creates all controllers with the supplied logger and adds them to

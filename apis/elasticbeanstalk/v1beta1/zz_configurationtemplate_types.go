@@ -39,7 +39,7 @@ type ConfigurationTemplateObservation struct {
 type ConfigurationTemplateParameters struct {
 
 	// –  name of the application to associate with this configuration template
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elasticbeanstalk/v1beta1.Application
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elasticbeanstalk/v1beta1.Application
 	// +kubebuilder:validation:Optional
 	Application *string `json:"application,omitempty" tf:"application,omitempty"`
 

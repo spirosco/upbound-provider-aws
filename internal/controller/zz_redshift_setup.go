@@ -9,18 +9,18 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	authenticationprofile "github.com/upbound/provider-aws/internal/controller/redshift/authenticationprofile"
-	cluster "github.com/upbound/provider-aws/internal/controller/redshift/cluster"
-	eventsubscription "github.com/upbound/provider-aws/internal/controller/redshift/eventsubscription"
-	hsmclientcertificate "github.com/upbound/provider-aws/internal/controller/redshift/hsmclientcertificate"
-	hsmconfiguration "github.com/upbound/provider-aws/internal/controller/redshift/hsmconfiguration"
-	parametergroup "github.com/upbound/provider-aws/internal/controller/redshift/parametergroup"
-	scheduledaction "github.com/upbound/provider-aws/internal/controller/redshift/scheduledaction"
-	snapshotcopygrant "github.com/upbound/provider-aws/internal/controller/redshift/snapshotcopygrant"
-	snapshotschedule "github.com/upbound/provider-aws/internal/controller/redshift/snapshotschedule"
-	snapshotscheduleassociation "github.com/upbound/provider-aws/internal/controller/redshift/snapshotscheduleassociation"
-	subnetgroup "github.com/upbound/provider-aws/internal/controller/redshift/subnetgroup"
-	usagelimit "github.com/upbound/provider-aws/internal/controller/redshift/usagelimit"
+	authenticationprofile "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/authenticationprofile"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/cluster"
+	eventsubscription "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/eventsubscription"
+	hsmclientcertificate "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/hsmclientcertificate"
+	hsmconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/hsmconfiguration"
+	parametergroup "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/parametergroup"
+	scheduledaction "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/scheduledaction"
+	snapshotcopygrant "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/snapshotcopygrant"
+	snapshotschedule "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/snapshotschedule"
+	snapshotscheduleassociation "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/snapshotscheduleassociation"
+	subnetgroup "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/subnetgroup"
+	usagelimit "github.com/spirosco/upbound-provider-aws/internal/controller/redshift/usagelimit"
 )
 
 // Setup_redshift creates all controllers with the supplied logger and adds them to

@@ -9,11 +9,11 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	lb "github.com/upbound/provider-aws/internal/controller/elbv2/lb"
-	lblistener "github.com/upbound/provider-aws/internal/controller/elbv2/lblistener"
-	lblistenerrule "github.com/upbound/provider-aws/internal/controller/elbv2/lblistenerrule"
-	lbtargetgroup "github.com/upbound/provider-aws/internal/controller/elbv2/lbtargetgroup"
-	lbtargetgroupattachment "github.com/upbound/provider-aws/internal/controller/elbv2/lbtargetgroupattachment"
+	lb "github.com/spirosco/upbound-provider-aws/internal/controller/elbv2/lb"
+	lblistener "github.com/spirosco/upbound-provider-aws/internal/controller/elbv2/lblistener"
+	lblistenerrule "github.com/spirosco/upbound-provider-aws/internal/controller/elbv2/lblistenerrule"
+	lbtargetgroup "github.com/spirosco/upbound-provider-aws/internal/controller/elbv2/lbtargetgroup"
+	lbtargetgroupattachment "github.com/spirosco/upbound-provider-aws/internal/controller/elbv2/lbtargetgroupattachment"
 )
 
 // Setup_elbv2 creates all controllers with the supplied logger and adds them to

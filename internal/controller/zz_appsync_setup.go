@@ -9,12 +9,12 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	apicache "github.com/upbound/provider-aws/internal/controller/appsync/apicache"
-	apikey "github.com/upbound/provider-aws/internal/controller/appsync/apikey"
-	datasource "github.com/upbound/provider-aws/internal/controller/appsync/datasource"
-	function "github.com/upbound/provider-aws/internal/controller/appsync/function"
-	graphqlapi "github.com/upbound/provider-aws/internal/controller/appsync/graphqlapi"
-	resolver "github.com/upbound/provider-aws/internal/controller/appsync/resolver"
+	apicache "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/apicache"
+	apikey "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/apikey"
+	datasource "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/datasource"
+	function "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/function"
+	graphqlapi "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/graphqlapi"
+	resolver "github.com/spirosco/upbound-provider-aws/internal/controller/appsync/resolver"
 )
 
 // Setup_appsync creates all controllers with the supplied logger and adds them to

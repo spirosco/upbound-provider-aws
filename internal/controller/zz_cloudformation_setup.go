@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	stack "github.com/upbound/provider-aws/internal/controller/cloudformation/stack"
-	stackset "github.com/upbound/provider-aws/internal/controller/cloudformation/stackset"
+	stack "github.com/spirosco/upbound-provider-aws/internal/controller/cloudformation/stack"
+	stackset "github.com/spirosco/upbound-provider-aws/internal/controller/cloudformation/stackset"
 )
 
 // Setup_cloudformation creates all controllers with the supplied logger and adds them to

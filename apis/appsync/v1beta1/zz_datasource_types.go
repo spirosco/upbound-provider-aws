@@ -91,7 +91,7 @@ type DatasourceObservation struct {
 type DatasourceParameters struct {
 
 	// API ID for the GraphQL API for the data source.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appsync/v1beta1.GraphQLAPI
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appsync/v1beta1.GraphQLAPI
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	APIID *string `json:"apiId,omitempty" tf:"api_id,omitempty"`
@@ -135,8 +135,8 @@ type DatasourceParameters struct {
 	RelationalDatabaseConfig []RelationalDatabaseConfigParameters `json:"relationalDatabaseConfig,omitempty" tf:"relational_database_config,omitempty"`
 
 	// IAM service role ARN for the data source.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	ServiceRoleArn *string `json:"serviceRoleArn,omitempty" tf:"service_role_arn,omitempty"`
 
@@ -200,7 +200,7 @@ type DynamodbConfigParameters struct {
 	Region *string `json:"region,omitempty" tf:"region,omitempty"`
 
 	// Name of the DynamoDB table.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/dynamodb/v1beta1.Table
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/dynamodb/v1beta1.Table
 	// +kubebuilder:validation:Optional
 	TableName *string `json:"tableName,omitempty" tf:"table_name,omitempty"`
 

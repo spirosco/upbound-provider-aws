@@ -141,7 +141,7 @@ type ImageRecipeComponentObservation struct {
 type ImageRecipeComponentParameters struct {
 
 	// Amazon Resource Name (ARN) of the Image Builder Component to associate.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/imagebuilder/v1beta1.Component
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/imagebuilder/v1beta1.Component
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	ComponentArn *string `json:"componentArn,omitempty" tf:"component_arn,omitempty"`

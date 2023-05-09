@@ -37,7 +37,7 @@ type NamedQueryObservation struct {
 type NamedQueryParameters struct {
 
 	// Database to which the query belongs.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/athena/v1beta1.Database
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/athena/v1beta1.Database
 	// +kubebuilder:validation:Optional
 	Database *string `json:"database,omitempty" tf:"database,omitempty"`
 
@@ -67,7 +67,7 @@ type NamedQueryParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// Workgroup to which the query belongs. Defaults to primary
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/athena/v1beta1.Workgroup
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/athena/v1beta1.Workgroup
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Workgroup *string `json:"workgroup,omitempty" tf:"workgroup,omitempty"`

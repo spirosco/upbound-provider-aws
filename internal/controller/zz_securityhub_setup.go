@@ -9,14 +9,14 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	account "github.com/upbound/provider-aws/internal/controller/securityhub/account"
-	actiontarget "github.com/upbound/provider-aws/internal/controller/securityhub/actiontarget"
-	findingaggregator "github.com/upbound/provider-aws/internal/controller/securityhub/findingaggregator"
-	insight "github.com/upbound/provider-aws/internal/controller/securityhub/insight"
-	inviteaccepter "github.com/upbound/provider-aws/internal/controller/securityhub/inviteaccepter"
-	member "github.com/upbound/provider-aws/internal/controller/securityhub/member"
-	productsubscription "github.com/upbound/provider-aws/internal/controller/securityhub/productsubscription"
-	standardssubscription "github.com/upbound/provider-aws/internal/controller/securityhub/standardssubscription"
+	account "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/account"
+	actiontarget "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/actiontarget"
+	findingaggregator "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/findingaggregator"
+	insight "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/insight"
+	inviteaccepter "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/inviteaccepter"
+	member "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/member"
+	productsubscription "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/productsubscription"
+	standardssubscription "github.com/spirosco/upbound-provider-aws/internal/controller/securityhub/standardssubscription"
 )
 
 // Setup_securityhub creates all controllers with the supplied logger and adds them to

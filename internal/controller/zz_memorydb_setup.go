@@ -9,11 +9,11 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	acl "github.com/upbound/provider-aws/internal/controller/memorydb/acl"
-	cluster "github.com/upbound/provider-aws/internal/controller/memorydb/cluster"
-	parametergroup "github.com/upbound/provider-aws/internal/controller/memorydb/parametergroup"
-	snapshot "github.com/upbound/provider-aws/internal/controller/memorydb/snapshot"
-	subnetgroup "github.com/upbound/provider-aws/internal/controller/memorydb/subnetgroup"
+	acl "github.com/spirosco/upbound-provider-aws/internal/controller/memorydb/acl"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/memorydb/cluster"
+	parametergroup "github.com/spirosco/upbound-provider-aws/internal/controller/memorydb/parametergroup"
+	snapshot "github.com/spirosco/upbound-provider-aws/internal/controller/memorydb/snapshot"
+	subnetgroup "github.com/spirosco/upbound-provider-aws/internal/controller/memorydb/subnetgroup"
 )
 
 // Setup_memorydb creates all controllers with the supplied logger and adds them to

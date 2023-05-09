@@ -9,9 +9,9 @@ import (
 	"context"
 	reference "github.com/crossplane/crossplane-runtime/pkg/reference"
 	errors "github.com/pkg/errors"
-	v1beta12 "github.com/upbound/provider-aws/apis/cognitoidp/v1beta1"
-	v1beta11 "github.com/upbound/provider-aws/apis/ec2/v1beta1"
-	v1beta1 "github.com/upbound/provider-aws/apis/s3/v1beta1"
+	v1beta12 "github.com/spirosco/upbound-provider-aws/apis/cognitoidp/v1beta1"
+	v1beta11 "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1"
+	v1beta1 "github.com/spirosco/upbound-provider-aws/apis/s3/v1beta1"
 	resource "github.com/upbound/upjet/pkg/resource"
 	client "sigs.k8s.io/controller-runtime/pkg/client"
 )

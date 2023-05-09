@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	budget "github.com/upbound/provider-aws/internal/controller/budgets/budget"
-	budgetaction "github.com/upbound/provider-aws/internal/controller/budgets/budgetaction"
+	budget "github.com/spirosco/upbound-provider-aws/internal/controller/budgets/budget"
+	budgetaction "github.com/spirosco/upbound-provider-aws/internal/controller/budgets/budgetaction"
 )
 
 // Setup_budgets creates all controllers with the supplied logger and adds them to

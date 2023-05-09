@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	alternatecontact "github.com/upbound/provider-aws/internal/controller/account/alternatecontact"
+	alternatecontact "github.com/spirosco/upbound-provider-aws/internal/controller/account/alternatecontact"
 )
 
 // Setup_account creates all controllers with the supplied logger and adds them to

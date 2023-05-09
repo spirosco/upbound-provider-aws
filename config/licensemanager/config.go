@@ -3,7 +3,7 @@ package licensemanager
 import (
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for licensemanager group.

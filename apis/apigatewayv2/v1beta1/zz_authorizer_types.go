@@ -101,8 +101,8 @@ type AuthorizerParameters struct {
 	// Authorizer's Uniform Resource Identifier (URI).
 	// For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource.
 	// Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/lambda/v1beta1.Function
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/apis/lambda/v1beta1.LambdaFunctionInvokeARN()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/lambda/v1beta1.Function
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/apis/lambda/v1beta1.LambdaFunctionInvokeARN()
 	// +kubebuilder:validation:Optional
 	AuthorizerURI *string `json:"authorizerUri,omitempty" tf:"authorizer_uri,omitempty"`
 

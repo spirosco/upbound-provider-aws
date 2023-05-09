@@ -214,7 +214,7 @@ type EndpointConfigurationParameters struct {
 	DataCaptureConfig []DataCaptureConfigParameters `json:"dataCaptureConfig,omitempty" tf:"data_capture_config,omitempty"`
 
 	// Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/kms/v1beta1.Key
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/kms/v1beta1.Key
 	// +kubebuilder:validation:Optional
 	KMSKeyArn *string `json:"kmsKeyArn,omitempty" tf:"kms_key_arn,omitempty"`
 
@@ -331,7 +331,7 @@ type ProductionVariantsParameters struct {
 	ModelDataDownloadTimeoutInSeconds *float64 `json:"modelDataDownloadTimeoutInSeconds,omitempty" tf:"model_data_download_timeout_in_seconds,omitempty"`
 
 	// The name of the model to use.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sagemaker/v1beta1.Model
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sagemaker/v1beta1.Model
 	// +kubebuilder:validation:Optional
 	ModelName *string `json:"modelName,omitempty" tf:"model_name,omitempty"`
 

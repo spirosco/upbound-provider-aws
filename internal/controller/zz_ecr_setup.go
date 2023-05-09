@@ -9,13 +9,13 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	lifecyclepolicy "github.com/upbound/provider-aws/internal/controller/ecr/lifecyclepolicy"
-	pullthroughcacherule "github.com/upbound/provider-aws/internal/controller/ecr/pullthroughcacherule"
-	registrypolicy "github.com/upbound/provider-aws/internal/controller/ecr/registrypolicy"
-	registryscanningconfiguration "github.com/upbound/provider-aws/internal/controller/ecr/registryscanningconfiguration"
-	replicationconfiguration "github.com/upbound/provider-aws/internal/controller/ecr/replicationconfiguration"
-	repository "github.com/upbound/provider-aws/internal/controller/ecr/repository"
-	repositorypolicy "github.com/upbound/provider-aws/internal/controller/ecr/repositorypolicy"
+	lifecyclepolicy "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/lifecyclepolicy"
+	pullthroughcacherule "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/pullthroughcacherule"
+	registrypolicy "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/registrypolicy"
+	registryscanningconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/registryscanningconfiguration"
+	replicationconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/replicationconfiguration"
+	repository "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/repository"
+	repositorypolicy "github.com/spirosco/upbound-provider-aws/internal/controller/ecr/repositorypolicy"
 )
 
 // Setup_ecr creates all controllers with the supplied logger and adds them to

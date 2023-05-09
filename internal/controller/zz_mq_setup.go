@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	broker "github.com/upbound/provider-aws/internal/controller/mq/broker"
-	configuration "github.com/upbound/provider-aws/internal/controller/mq/configuration"
+	broker "github.com/spirosco/upbound-provider-aws/internal/controller/mq/broker"
+	configuration "github.com/spirosco/upbound-provider-aws/internal/controller/mq/configuration"
 )
 
 // Setup_mq creates all controllers with the supplied logger and adds them to

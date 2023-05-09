@@ -18,7 +18,7 @@ func Configure(p *config.Provider) {
 
 	p.AddResourceConfigurator("aws_docdb_subnet_group", func(r *config.Resource) {
 		r.References["subnet_ids"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 		}
 	})
 }

@@ -31,7 +31,7 @@ type DiskAttachmentObservation struct {
 type DiskAttachmentParameters struct {
 
 	// The name of the Lightsail Disk.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/lightsail/v1beta1.Disk
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/lightsail/v1beta1.Disk
 	// +kubebuilder:validation:Optional
 	DiskName *string `json:"diskName,omitempty" tf:"disk_name,omitempty"`
 
@@ -48,7 +48,7 @@ type DiskAttachmentParameters struct {
 	DiskPath *string `json:"diskPath,omitempty" tf:"disk_path,omitempty"`
 
 	// The name of the Lightsail Instance to attach to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/lightsail/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/lightsail/v1beta1.Instance
 	// +kubebuilder:validation:Optional
 	InstanceName *string `json:"instanceName,omitempty" tf:"instance_name,omitempty"`
 

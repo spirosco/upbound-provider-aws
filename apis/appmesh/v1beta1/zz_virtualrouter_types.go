@@ -72,7 +72,7 @@ type VirtualRouterObservation struct {
 type VirtualRouterParameters struct {
 
 	// Name of the service mesh in which to create the virtual router. Must be between 1 and 255 characters in length.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appmesh/v1beta1.Mesh
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appmesh/v1beta1.Mesh
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	MeshName *string `json:"meshName,omitempty" tf:"mesh_name,omitempty"`

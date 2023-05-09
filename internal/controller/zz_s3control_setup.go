@@ -9,14 +9,14 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	accesspoint "github.com/upbound/provider-aws/internal/controller/s3control/accesspoint"
-	accesspointpolicy "github.com/upbound/provider-aws/internal/controller/s3control/accesspointpolicy"
-	accountpublicaccessblock "github.com/upbound/provider-aws/internal/controller/s3control/accountpublicaccessblock"
-	multiregionaccesspoint "github.com/upbound/provider-aws/internal/controller/s3control/multiregionaccesspoint"
-	multiregionaccesspointpolicy "github.com/upbound/provider-aws/internal/controller/s3control/multiregionaccesspointpolicy"
-	objectlambdaaccesspoint "github.com/upbound/provider-aws/internal/controller/s3control/objectlambdaaccesspoint"
-	objectlambdaaccesspointpolicy "github.com/upbound/provider-aws/internal/controller/s3control/objectlambdaaccesspointpolicy"
-	storagelensconfiguration "github.com/upbound/provider-aws/internal/controller/s3control/storagelensconfiguration"
+	accesspoint "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/accesspoint"
+	accesspointpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/accesspointpolicy"
+	accountpublicaccessblock "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/accountpublicaccessblock"
+	multiregionaccesspoint "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/multiregionaccesspoint"
+	multiregionaccesspointpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/multiregionaccesspointpolicy"
+	objectlambdaaccesspoint "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/objectlambdaaccesspoint"
+	objectlambdaaccesspointpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/objectlambdaaccesspointpolicy"
+	storagelensconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/s3control/storagelensconfiguration"
 )
 
 // Setup_s3control creates all controllers with the supplied logger and adds them to

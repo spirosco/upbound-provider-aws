@@ -9,13 +9,13 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	cluster "github.com/upbound/provider-aws/internal/controller/docdb/cluster"
-	clusterinstance "github.com/upbound/provider-aws/internal/controller/docdb/clusterinstance"
-	clusterparametergroup "github.com/upbound/provider-aws/internal/controller/docdb/clusterparametergroup"
-	clustersnapshot "github.com/upbound/provider-aws/internal/controller/docdb/clustersnapshot"
-	eventsubscription "github.com/upbound/provider-aws/internal/controller/docdb/eventsubscription"
-	globalcluster "github.com/upbound/provider-aws/internal/controller/docdb/globalcluster"
-	subnetgroup "github.com/upbound/provider-aws/internal/controller/docdb/subnetgroup"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/cluster"
+	clusterinstance "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/clusterinstance"
+	clusterparametergroup "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/clusterparametergroup"
+	clustersnapshot "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/clustersnapshot"
+	eventsubscription "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/eventsubscription"
+	globalcluster "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/globalcluster"
+	subnetgroup "github.com/spirosco/upbound-provider-aws/internal/controller/docdb/subnetgroup"
 )
 
 // Setup_docdb creates all controllers with the supplied logger and adds them to

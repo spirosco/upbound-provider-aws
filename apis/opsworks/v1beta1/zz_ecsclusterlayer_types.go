@@ -278,7 +278,7 @@ type EcsClusterLayerParameters struct {
 	CustomSecurityGroupIDSelector *v1.Selector `json:"customSecurityGroupIdSelector,omitempty" tf:"-"`
 
 	// Ids for a set of security groups to apply to the layer's instances.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup
 	// +crossplane:generate:reference:refFieldName=CustomSecurityGroupIDRefs
 	// +crossplane:generate:reference:selectorFieldName=CustomSecurityGroupIDSelector
 	// +kubebuilder:validation:Optional
@@ -302,7 +302,7 @@ type EcsClusterLayerParameters struct {
 	EBSVolume []EcsClusterLayerEBSVolumeParameters `json:"ebsVolume,omitempty" tf:"ebs_volume,omitempty"`
 
 	// The ECS Cluster ARN of the layer.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecs/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecs/v1beta1.Cluster
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	EcsClusterArn *string `json:"ecsClusterArn,omitempty" tf:"ecs_cluster_arn,omitempty"`
@@ -335,7 +335,7 @@ type EcsClusterLayerParameters struct {
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
 	// ID of the stack the layer will belong to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/opsworks/v1beta1.Stack
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/opsworks/v1beta1.Stack
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	StackID *string `json:"stackId,omitempty" tf:"stack_id,omitempty"`

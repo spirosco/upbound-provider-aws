@@ -27,7 +27,7 @@ type SnapshotScheduleAssociationObservation struct {
 type SnapshotScheduleAssociationParameters struct {
 
 	// The cluster identifier.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/redshift/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/redshift/v1beta1.Cluster
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ClusterIdentifier *string `json:"clusterIdentifier,omitempty" tf:"cluster_identifier,omitempty"`
@@ -46,7 +46,7 @@ type SnapshotScheduleAssociationParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The snapshot schedule identifier.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/redshift/v1beta1.SnapshotSchedule
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/redshift/v1beta1.SnapshotSchedule
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ScheduleIdentifier *string `json:"scheduleIdentifier,omitempty" tf:"schedule_identifier,omitempty"`

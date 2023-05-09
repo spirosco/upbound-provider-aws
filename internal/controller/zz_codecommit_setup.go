@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	approvalruletemplate "github.com/upbound/provider-aws/internal/controller/codecommit/approvalruletemplate"
-	approvalruletemplateassociation "github.com/upbound/provider-aws/internal/controller/codecommit/approvalruletemplateassociation"
-	repository "github.com/upbound/provider-aws/internal/controller/codecommit/repository"
-	trigger "github.com/upbound/provider-aws/internal/controller/codecommit/trigger"
+	approvalruletemplate "github.com/spirosco/upbound-provider-aws/internal/controller/codecommit/approvalruletemplate"
+	approvalruletemplateassociation "github.com/spirosco/upbound-provider-aws/internal/controller/codecommit/approvalruletemplateassociation"
+	repository "github.com/spirosco/upbound-provider-aws/internal/controller/codecommit/repository"
+	trigger "github.com/spirosco/upbound-provider-aws/internal/controller/codecommit/trigger"
 )
 
 // Setup_codecommit creates all controllers with the supplied logger and adds them to

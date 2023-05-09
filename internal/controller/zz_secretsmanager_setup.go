@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	secret "github.com/upbound/provider-aws/internal/controller/secretsmanager/secret"
-	secretpolicy "github.com/upbound/provider-aws/internal/controller/secretsmanager/secretpolicy"
-	secretrotation "github.com/upbound/provider-aws/internal/controller/secretsmanager/secretrotation"
-	secretversion "github.com/upbound/provider-aws/internal/controller/secretsmanager/secretversion"
+	secret "github.com/spirosco/upbound-provider-aws/internal/controller/secretsmanager/secret"
+	secretpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/secretsmanager/secretpolicy"
+	secretrotation "github.com/spirosco/upbound-provider-aws/internal/controller/secretsmanager/secretrotation"
+	secretversion "github.com/spirosco/upbound-provider-aws/internal/controller/secretsmanager/secretversion"
 )
 
 // Setup_secretsmanager creates all controllers with the supplied logger and adds them to

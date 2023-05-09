@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	conditionalforwarder "github.com/upbound/provider-aws/internal/controller/ds/conditionalforwarder"
-	directory "github.com/upbound/provider-aws/internal/controller/ds/directory"
-	shareddirectory "github.com/upbound/provider-aws/internal/controller/ds/shareddirectory"
+	conditionalforwarder "github.com/spirosco/upbound-provider-aws/internal/controller/ds/conditionalforwarder"
+	directory "github.com/spirosco/upbound-provider-aws/internal/controller/ds/directory"
+	shareddirectory "github.com/spirosco/upbound-provider-aws/internal/controller/ds/shareddirectory"
 )
 
 // Setup_ds creates all controllers with the supplied logger and adds them to

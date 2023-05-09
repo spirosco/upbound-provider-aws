@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	firewall "github.com/upbound/provider-aws/internal/controller/networkfirewall/firewall"
-	firewallpolicy "github.com/upbound/provider-aws/internal/controller/networkfirewall/firewallpolicy"
-	loggingconfiguration "github.com/upbound/provider-aws/internal/controller/networkfirewall/loggingconfiguration"
-	rulegroup "github.com/upbound/provider-aws/internal/controller/networkfirewall/rulegroup"
+	firewall "github.com/spirosco/upbound-provider-aws/internal/controller/networkfirewall/firewall"
+	firewallpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/networkfirewall/firewallpolicy"
+	loggingconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/networkfirewall/loggingconfiguration"
+	rulegroup "github.com/spirosco/upbound-provider-aws/internal/controller/networkfirewall/rulegroup"
 )
 
 // Setup_networkfirewall creates all controllers with the supplied logger and adds them to

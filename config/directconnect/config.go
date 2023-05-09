@@ -17,7 +17,7 @@ package directconnect
 import (
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for directconnect group.
@@ -32,7 +32,7 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 			Type: "Connection",
 		}
 		r.References["vpn_gateway_id"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/ec2/v1beta1.VPNGateway",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.VPNGateway",
 		}
 	})
 	p.AddResourceConfigurator("aws_dx_gateway_association", func(r *config.Resource) {
@@ -85,10 +85,10 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 
 	p.AddResourceConfigurator("aws_dx_macsec_key_association", func(r *config.Resource) {
 		r.References["connection_id"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/directconnect/v1beta1.Connection",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/directconnect/v1beta1.Connection",
 		}
 		r.References["secret_arn"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/secretsmanager/v1beta1.Secret",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/secretsmanager/v1beta1.Secret",
 			Extractor: common.PathARNExtractor,
 		}
 	})

@@ -7,7 +7,7 @@ weight: 1
 This guide walks through the process to install Upbound Universal Crossplane and
 install the AWS official provider. For more details about the AWS official
 provider read the
-[Configuration](https://marketplace.upbound.io/providers/upbound/provider-aws/latest/docs/configuration)
+[Configuration](https://marketplace.upbound.io/providers/spirosco/upbound-provider-aws/latest/docs/configuration)
 .
 
 To install and use this official provider:
@@ -40,7 +40,7 @@ _Note:_ all commands use the current `kubeconfig` context and configuration.
 ### Bash script
 Run the following to download and install 
 ```shell
-curl -sLO "https://raw.githubusercontent.com/upbound/provider-aws/main/docs/quickstart.sh"
+curl -sLO "https://raw.githubusercontent.com/spirosco/upbound-provider-aws/main/docs/quickstart.sh"
 chmod +x quickstart.sh
 ./quickstart.sh
 ```
@@ -71,7 +71,7 @@ kind: Provider
 metadata:
   name: provider-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws:v0.21.0
+  package: xpkg.upbound.io/spirosco/upbound-provider-aws:v0.21.0
 EOF
 kubectl wait "providers.pkg.crossplane.io/provider-aws" --for=condition=Installed --timeout=180s
 kubectl wait "providers.pkg.crossplane.io/provider-aws" --for=condition=Healthy --timeout=180s
@@ -191,7 +191,7 @@ kind: Provider
 metadata:
   name: provider-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws:v0.18.0
+  package: xpkg.upbound.io/spirosco/upbound-provider-aws:v0.18.0
 EOF
 ```
 
@@ -218,7 +218,7 @@ Status:
     Reason:                ActivePackageRevision
     Status:                True
     Type:                  Installed
-  Current Identifier:      xpkg.upbound.io/upbound/provider-aws:latest
+  Current Identifier:      xpkg.upbound.io/spirosco/upbound-provider-aws:latest
   Current Revision:        provider-aws-ab4a3525fb0b
 Events:
   Type     Reason                  Age               From                                 Message
@@ -232,7 +232,7 @@ The `INSTALLED` value should be `True`. It may take up to 5 minutes for
 ```shell
 $ kubectl get provider
 NAME           INSTALLED   HEALTHY   PACKAGE                                        AGE
-provider-aws   True        True   xpkg.upbound.io/upbound/provider-aws:latest      5s
+provider-aws   True        True   xpkg.upbound.io/spirosco/upbound-provider-aws:latest      5s
 ```
 
 If there are issues downloading and installing the provider the `INSTALLED`
@@ -241,7 +241,7 @@ field is empty.
 ```shell
 $ kubectl get providers
 NAME           INSTALLED   HEALTHY   PACKAGE                                       AGE
-provider-aws                         xpkg.upbound.io/upbound/provider-aws:latest   62s
+provider-aws                         xpkg.upbound.io/spirosco/upbound-provider-aws:latest   62s
 ```
 
 Use `kubectl describe providers` for more information.

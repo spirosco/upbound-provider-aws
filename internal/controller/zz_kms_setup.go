@@ -9,13 +9,13 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	alias "github.com/upbound/provider-aws/internal/controller/kms/alias"
-	ciphertext "github.com/upbound/provider-aws/internal/controller/kms/ciphertext"
-	externalkey "github.com/upbound/provider-aws/internal/controller/kms/externalkey"
-	grant "github.com/upbound/provider-aws/internal/controller/kms/grant"
-	key "github.com/upbound/provider-aws/internal/controller/kms/key"
-	replicaexternalkey "github.com/upbound/provider-aws/internal/controller/kms/replicaexternalkey"
-	replicakey "github.com/upbound/provider-aws/internal/controller/kms/replicakey"
+	alias "github.com/spirosco/upbound-provider-aws/internal/controller/kms/alias"
+	ciphertext "github.com/spirosco/upbound-provider-aws/internal/controller/kms/ciphertext"
+	externalkey "github.com/spirosco/upbound-provider-aws/internal/controller/kms/externalkey"
+	grant "github.com/spirosco/upbound-provider-aws/internal/controller/kms/grant"
+	key "github.com/spirosco/upbound-provider-aws/internal/controller/kms/key"
+	replicaexternalkey "github.com/spirosco/upbound-provider-aws/internal/controller/kms/replicaexternalkey"
+	replicakey "github.com/spirosco/upbound-provider-aws/internal/controller/kms/replicakey"
 )
 
 // Setup_kms creates all controllers with the supplied logger and adds them to

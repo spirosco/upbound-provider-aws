@@ -9,19 +9,19 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	attachmentaccepter "github.com/upbound/provider-aws/internal/controller/networkmanager/attachmentaccepter"
-	connectattachment "github.com/upbound/provider-aws/internal/controller/networkmanager/connectattachment"
-	connection "github.com/upbound/provider-aws/internal/controller/networkmanager/connection"
-	corenetwork "github.com/upbound/provider-aws/internal/controller/networkmanager/corenetwork"
-	customergatewayassociation "github.com/upbound/provider-aws/internal/controller/networkmanager/customergatewayassociation"
-	device "github.com/upbound/provider-aws/internal/controller/networkmanager/device"
-	globalnetwork "github.com/upbound/provider-aws/internal/controller/networkmanager/globalnetwork"
-	link "github.com/upbound/provider-aws/internal/controller/networkmanager/link"
-	linkassociation "github.com/upbound/provider-aws/internal/controller/networkmanager/linkassociation"
-	site "github.com/upbound/provider-aws/internal/controller/networkmanager/site"
-	transitgatewayconnectpeerassociation "github.com/upbound/provider-aws/internal/controller/networkmanager/transitgatewayconnectpeerassociation"
-	transitgatewayregistration "github.com/upbound/provider-aws/internal/controller/networkmanager/transitgatewayregistration"
-	vpcattachment "github.com/upbound/provider-aws/internal/controller/networkmanager/vpcattachment"
+	attachmentaccepter "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/attachmentaccepter"
+	connectattachment "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/connectattachment"
+	connection "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/connection"
+	corenetwork "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/corenetwork"
+	customergatewayassociation "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/customergatewayassociation"
+	device "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/device"
+	globalnetwork "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/globalnetwork"
+	link "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/link"
+	linkassociation "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/linkassociation"
+	site "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/site"
+	transitgatewayconnectpeerassociation "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/transitgatewayconnectpeerassociation"
+	transitgatewayregistration "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/transitgatewayregistration"
+	vpcattachment "github.com/spirosco/upbound-provider-aws/internal/controller/networkmanager/vpcattachment"
 )
 
 // Setup_networkmanager creates all controllers with the supplied logger and adds them to

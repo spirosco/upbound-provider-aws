@@ -173,7 +173,7 @@ type EcsTargetParameters struct {
 	TaskCount *float64 `json:"taskCount,omitempty" tf:"task_count,omitempty"`
 
 	// The ARN of the task definition to use if the event target is an Amazon ECS cluster.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecs/v1beta1.TaskDefinition
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecs/v1beta1.TaskDefinition
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	TaskDefinitionArn *string `json:"taskDefinitionArn,omitempty" tf:"task_definition_arn,omitempty"`
@@ -516,8 +516,8 @@ type TargetParameters struct {
 	RetryPolicy []RetryPolicyParameters `json:"retryPolicy,omitempty" tf:"retry_policy,omitempty"`
 
 	// The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	RoleArn *string `json:"roleArn,omitempty" tf:"role_arn,omitempty"`
 
@@ -530,7 +530,7 @@ type TargetParameters struct {
 	RoleArnSelector *v1.Selector `json:"roleArnSelector,omitempty" tf:"-"`
 
 	// The name of the rule you want to add targets to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cloudwatchevents/v1beta1.Rule
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cloudwatchevents/v1beta1.Rule
 	// +kubebuilder:validation:Optional
 	Rule *string `json:"rule,omitempty" tf:"rule,omitempty"`
 

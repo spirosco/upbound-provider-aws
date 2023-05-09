@@ -98,7 +98,7 @@ type ThingGroupObservation struct {
 type ThingGroupParameters struct {
 
 	// The name of the parent Thing Group.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iot/v1beta1.ThingGroup
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iot/v1beta1.ThingGroup
 	// +kubebuilder:validation:Optional
 	ParentGroupName *string `json:"parentGroupName,omitempty" tf:"parent_group_name,omitempty"`
 

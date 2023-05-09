@@ -46,7 +46,7 @@ type DiscovererParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The ARN of the event bus to discover event schemas on.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cloudwatchevents/v1beta1.Bus
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cloudwatchevents/v1beta1.Bus
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	SourceArn *string `json:"sourceArn,omitempty" tf:"source_arn,omitempty"`

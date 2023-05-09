@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	repository "github.com/upbound/provider-aws/internal/controller/ecrpublic/repository"
-	repositorypolicy "github.com/upbound/provider-aws/internal/controller/ecrpublic/repositorypolicy"
+	repository "github.com/spirosco/upbound-provider-aws/internal/controller/ecrpublic/repository"
+	repositorypolicy "github.com/spirosco/upbound-provider-aws/internal/controller/ecrpublic/repositorypolicy"
 )
 
 // Setup_ecrpublic creates all controllers with the supplied logger and adds them to

@@ -44,7 +44,7 @@ kind: Provider
 metadata:
   name: provider-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws:<version>
+  package: xpkg.upbound.io/spirosco/upbound-provider-aws:<version>
 ```
 
 Define the provider version with `spec.package`.
@@ -56,7 +56,7 @@ Verify the configuration with `kubectl get providers`.
 ```shell
 $ kubectl get providers
 NAME           INSTALLED   HEALTHY   PACKAGE                                       AGE
-provider-aws   True        True      xpkg.upbound.io/upbound/provider-aws:v0.17.0  62s
+provider-aws   True        True      xpkg.upbound.io/spirosco/upbound-provider-aws:v0.17.0  62s
 ```
 
 View the Crossplane [Provider CRD
@@ -143,7 +143,7 @@ The `spec.secretRef` describes the parameters of the secret to use.
 * `key` is the `Data` field from `kubectl describe secret`.
 
 View the [ProviderConfig
-CRD](https://marketplace.upbound.io/providers/upbound/provider-aws/latest/resources/aws.upbound.io/ProviderConfig/v1beta1)
+CRD](https://marketplace.upbound.io/providers/spirosco/upbound-provider-aws/latest/resources/aws.upbound.io/ProviderConfig/v1beta1)
 definition to view all available `ProviderConfig` options.
 
 #### Authenticate using IAM Roles for Service Accounts
@@ -500,7 +500,7 @@ kind: Provider
 metadata:
   name: provider-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws:latest
+  package: xpkg.upbound.io/spirosco/upbound-provider-aws:latest
   controllerConfigRef:
     name: irsa-controllerconfig
 ```
@@ -512,7 +512,7 @@ providers`.
 $ kubectl apply -f provider.yaml
 $ kubectl get providers
 NAME           INSTALLED   HEALTHY   PACKAGE                                       AGE
-provider-aws   True        True      xpkg.upbound.io/upbound/provider-aws:latest   83s
+provider-aws   True        True      xpkg.upbound.io/spirosco/upbound-provider-aws:latest   83s
 ```
 
 _Note_: it may take up to five minutes for the provider `HEALTHY` value to be

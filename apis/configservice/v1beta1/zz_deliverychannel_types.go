@@ -42,7 +42,7 @@ type DeliveryChannelParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The name of the S3 bucket used to store the configuration history.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/s3/v1beta1.Bucket
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/s3/v1beta1.Bucket
 	// +kubebuilder:validation:Optional
 	S3BucketName *string `json:"s3BucketName,omitempty" tf:"s3_bucket_name,omitempty"`
 

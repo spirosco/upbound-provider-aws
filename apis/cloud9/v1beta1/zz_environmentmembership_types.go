@@ -34,7 +34,7 @@ type EnvironmentMembershipObservation struct {
 type EnvironmentMembershipParameters struct {
 
 	// The ID of the environment that contains the environment member you want to add.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cloud9/v1beta1.EnvironmentEC2
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cloud9/v1beta1.EnvironmentEC2
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	EnvironmentID *string `json:"environmentId,omitempty" tf:"environment_id,omitempty"`
@@ -57,7 +57,7 @@ type EnvironmentMembershipParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The Amazon Resource Name (ARN) of the environment member you want to add.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.User
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	UserArn *string `json:"userArn,omitempty" tf:"user_arn,omitempty"`

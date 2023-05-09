@@ -9,12 +9,12 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	addon "github.com/upbound/provider-aws/internal/controller/eks/addon"
-	cluster "github.com/upbound/provider-aws/internal/controller/eks/cluster"
-	clusterauth "github.com/upbound/provider-aws/internal/controller/eks/clusterauth"
-	fargateprofile "github.com/upbound/provider-aws/internal/controller/eks/fargateprofile"
-	identityproviderconfig "github.com/upbound/provider-aws/internal/controller/eks/identityproviderconfig"
-	nodegroup "github.com/upbound/provider-aws/internal/controller/eks/nodegroup"
+	addon "github.com/spirosco/upbound-provider-aws/internal/controller/eks/addon"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/eks/cluster"
+	clusterauth "github.com/spirosco/upbound-provider-aws/internal/controller/eks/clusterauth"
+	fargateprofile "github.com/spirosco/upbound-provider-aws/internal/controller/eks/fargateprofile"
+	identityproviderconfig "github.com/spirosco/upbound-provider-aws/internal/controller/eks/identityproviderconfig"
+	nodegroup "github.com/spirosco/upbound-provider-aws/internal/controller/eks/nodegroup"
 )
 
 // Setup_eks creates all controllers with the supplied logger and adds them to

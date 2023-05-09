@@ -9,13 +9,13 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	component "github.com/upbound/provider-aws/internal/controller/imagebuilder/component"
-	containerrecipe "github.com/upbound/provider-aws/internal/controller/imagebuilder/containerrecipe"
-	distributionconfiguration "github.com/upbound/provider-aws/internal/controller/imagebuilder/distributionconfiguration"
-	image "github.com/upbound/provider-aws/internal/controller/imagebuilder/image"
-	imagepipeline "github.com/upbound/provider-aws/internal/controller/imagebuilder/imagepipeline"
-	imagerecipe "github.com/upbound/provider-aws/internal/controller/imagebuilder/imagerecipe"
-	infrastructureconfiguration "github.com/upbound/provider-aws/internal/controller/imagebuilder/infrastructureconfiguration"
+	component "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/component"
+	containerrecipe "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/containerrecipe"
+	distributionconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/distributionconfiguration"
+	image "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/image"
+	imagepipeline "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/imagepipeline"
+	imagerecipe "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/imagerecipe"
+	infrastructureconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/imagebuilder/infrastructureconfiguration"
 )
 
 // Setup_imagebuilder creates all controllers with the supplied logger and adds them to

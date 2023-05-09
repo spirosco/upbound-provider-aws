@@ -168,7 +168,7 @@ type UserHierarchyStructureParameters struct {
 	HierarchyStructure []HierarchyStructureParameters `json:"hierarchyStructure,omitempty" tf:"hierarchy_structure,omitempty"`
 
 	// Specifies the identifier of the hosting Amazon Connect Instance.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/connect/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/connect/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	InstanceID *string `json:"instanceId,omitempty" tf:"instance_id,omitempty"`

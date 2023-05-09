@@ -26,7 +26,7 @@ type ThingPrincipalAttachmentObservation struct {
 type ThingPrincipalAttachmentParameters struct {
 
 	// The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iot/v1beta1.Certificate
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iot/v1beta1.Certificate
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	Principal *string `json:"principal,omitempty" tf:"principal,omitempty"`
@@ -45,7 +45,7 @@ type ThingPrincipalAttachmentParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The name of the thing.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iot/v1beta1.Thing
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iot/v1beta1.Thing
 	// +kubebuilder:validation:Optional
 	Thing *string `json:"thing,omitempty" tf:"thing,omitempty"`
 

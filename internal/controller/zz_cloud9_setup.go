@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	environmentec2 "github.com/upbound/provider-aws/internal/controller/cloud9/environmentec2"
-	environmentmembership "github.com/upbound/provider-aws/internal/controller/cloud9/environmentmembership"
+	environmentec2 "github.com/spirosco/upbound-provider-aws/internal/controller/cloud9/environmentec2"
+	environmentmembership "github.com/spirosco/upbound-provider-aws/internal/controller/cloud9/environmentmembership"
 )
 
 // Setup_cloud9 creates all controllers with the supplied logger and adds them to

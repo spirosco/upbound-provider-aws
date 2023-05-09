@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	domain "github.com/upbound/provider-aws/internal/controller/cloudsearch/domain"
-	domainserviceaccesspolicy "github.com/upbound/provider-aws/internal/controller/cloudsearch/domainserviceaccesspolicy"
+	domain "github.com/spirosco/upbound-provider-aws/internal/controller/cloudsearch/domain"
+	domainserviceaccesspolicy "github.com/spirosco/upbound-provider-aws/internal/controller/cloudsearch/domainserviceaccesspolicy"
 )
 
 // Setup_cloudsearch creates all controllers with the supplied logger and adds them to

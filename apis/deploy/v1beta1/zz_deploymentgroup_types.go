@@ -157,7 +157,7 @@ type DeploymentGroupParameters struct {
 	AlarmConfiguration []AlarmConfigurationParameters `json:"alarmConfiguration,omitempty" tf:"alarm_configuration,omitempty"`
 
 	// The name of the application.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/deploy/v1beta1.App
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/deploy/v1beta1.App
 	// +kubebuilder:validation:Optional
 	AppName *string `json:"appName,omitempty" tf:"app_name,omitempty"`
 
@@ -215,8 +215,8 @@ type DeploymentGroupParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The service role ARN that allows deployments.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	ServiceRoleArn *string `json:"serviceRoleArn,omitempty" tf:"service_role_arn,omitempty"`
 
@@ -353,7 +353,7 @@ type ELBInfoObservation struct {
 type ELBInfoParameters struct {
 
 	// The name of the target group that instances in the original environment are deregistered from, and instances in the replacement environment registered with. For in-place deployments, the name of the target group that instances are deregistered from, so they are not serving traffic during a deployment, and then re-registered with after the deployment completes.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elb/v1beta1.ELB
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elb/v1beta1.ELB
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
@@ -378,7 +378,7 @@ type EcsServiceObservation struct {
 type EcsServiceParameters struct {
 
 	// The name of the ECS cluster.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecs/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecs/v1beta1.Cluster
 	// +kubebuilder:validation:Optional
 	ClusterName *string `json:"clusterName,omitempty" tf:"cluster_name,omitempty"`
 
@@ -391,7 +391,7 @@ type EcsServiceParameters struct {
 	ClusterNameSelector *v1.Selector `json:"clusterNameSelector,omitempty" tf:"-"`
 
 	// The name of the ECS service.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecs/v1beta1.Service
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecs/v1beta1.Service
 	// +kubebuilder:validation:Optional
 	ServiceName *string `json:"serviceName,omitempty" tf:"service_name,omitempty"`
 
@@ -533,7 +533,7 @@ type TargetGroupPairInfoParameters struct {
 type TargetGroupParameters struct {
 
 	// The name of the target group that instances in the original environment are deregistered from, and instances in the replacement environment registered with. For in-place deployments, the name of the target group that instances are deregistered from, so they are not serving traffic during a deployment, and then re-registered with after the deployment completes.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elbv2/v1beta1.LBTargetGroup
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elbv2/v1beta1.LBTargetGroup
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -603,7 +603,7 @@ type TriggerConfigurationParameters struct {
 	TriggerName *string `json:"triggerName" tf:"trigger_name,omitempty"`
 
 	// The ARN of the SNS topic through which notifications are sent.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sns/v1beta1.Topic
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sns/v1beta1.Topic
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	TriggerTargetArn *string `json:"triggerTargetArn,omitempty" tf:"trigger_target_arn,omitempty"`

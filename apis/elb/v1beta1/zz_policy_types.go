@@ -24,7 +24,7 @@ type PolicyAttributeParameters struct {
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elb/v1beta1.Policy
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elb/v1beta1.Policy
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("policy_name",false)
 	// +kubebuilder:validation:Optional
 	Value *string `json:"value,omitempty" tf:"value,omitempty"`
@@ -59,7 +59,7 @@ type PolicyObservation struct {
 type PolicyParameters struct {
 
 	// The load balancer on which the policy is defined.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elb/v1beta1.ELB
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elb/v1beta1.ELB
 	// +kubebuilder:validation:Optional
 	LoadBalancerName *string `json:"loadBalancerName,omitempty" tf:"load_balancer_name,omitempty"`
 

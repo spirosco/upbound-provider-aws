@@ -687,7 +687,7 @@ type NetworkInsightsAnalysisParameters struct {
 	FilterInArns []*string `json:"filterInArns,omitempty" tf:"filter_in_arns,omitempty"`
 
 	// ID of the Network Insights Path to run an analysis on.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.NetworkInsightsPath
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.NetworkInsightsPath
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	NetworkInsightsPathID *string `json:"networkInsightsPathId,omitempty" tf:"network_insights_path_id,omitempty"`

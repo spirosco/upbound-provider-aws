@@ -91,7 +91,7 @@ type QueueParameters struct {
 	Description *string `json:"description,omitempty" tf:"description,omitempty"`
 
 	// Specifies the identifier of the Hours of Operation.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/connect/v1beta1.HoursOfOperation
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/connect/v1beta1.HoursOfOperation
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("hours_of_operation_id",true)
 	// +kubebuilder:validation:Optional
 	HoursOfOperationID *string `json:"hoursOfOperationId,omitempty" tf:"hours_of_operation_id,omitempty"`
@@ -105,7 +105,7 @@ type QueueParameters struct {
 	HoursOfOperationIDSelector *v1.Selector `json:"hoursOfOperationIdSelector,omitempty" tf:"-"`
 
 	// Specifies the identifier of the hosting Amazon Connect Instance.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/connect/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/connect/v1beta1.Instance
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	InstanceID *string `json:"instanceId,omitempty" tf:"instance_id,omitempty"`

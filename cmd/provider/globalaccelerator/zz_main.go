@@ -26,12 +26,12 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/upbound/provider-aws/apis"
-	"github.com/upbound/provider-aws/apis/v1alpha1"
-	"github.com/upbound/provider-aws/config"
-	"github.com/upbound/provider-aws/internal/clients"
-	"github.com/upbound/provider-aws/internal/controller"
-	"github.com/upbound/provider-aws/internal/features"
+	"github.com/spirosco/upbound-provider-aws/apis"
+	"github.com/spirosco/upbound-provider-aws/apis/v1alpha1"
+	"github.com/spirosco/upbound-provider-aws/config"
+	"github.com/spirosco/upbound-provider-aws/internal/clients"
+	"github.com/spirosco/upbound-provider-aws/internal/controller"
+	"github.com/spirosco/upbound-provider-aws/internal/features"
 )
 
 func main() {

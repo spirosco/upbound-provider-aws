@@ -25,7 +25,7 @@ type InvitationAccepterObservation struct {
 type InvitationAccepterParameters struct {
 
 	// ARN of the behavior graph that the member account is accepting the invitation for.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/detective/v1beta1.Graph
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/detective/v1beta1.Graph
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("graph_arn",true)
 	// +kubebuilder:validation:Optional
 	GraphArn *string `json:"graphArn,omitempty" tf:"graph_arn,omitempty"`

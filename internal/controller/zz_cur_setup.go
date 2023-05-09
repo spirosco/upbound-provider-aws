@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	reportdefinition "github.com/upbound/provider-aws/internal/controller/cur/reportdefinition"
+	reportdefinition "github.com/spirosco/upbound-provider-aws/internal/controller/cur/reportdefinition"
 )
 
 // Setup_cur creates all controllers with the supplied logger and adds them to

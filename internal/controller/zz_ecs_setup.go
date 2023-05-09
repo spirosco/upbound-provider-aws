@@ -9,12 +9,12 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	accountsettingdefault "github.com/upbound/provider-aws/internal/controller/ecs/accountsettingdefault"
-	capacityprovider "github.com/upbound/provider-aws/internal/controller/ecs/capacityprovider"
-	cluster "github.com/upbound/provider-aws/internal/controller/ecs/cluster"
-	clustercapacityproviders "github.com/upbound/provider-aws/internal/controller/ecs/clustercapacityproviders"
-	service "github.com/upbound/provider-aws/internal/controller/ecs/service"
-	taskdefinition "github.com/upbound/provider-aws/internal/controller/ecs/taskdefinition"
+	accountsettingdefault "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/accountsettingdefault"
+	capacityprovider "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/capacityprovider"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/cluster"
+	clustercapacityproviders "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/clustercapacityproviders"
+	service "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/service"
+	taskdefinition "github.com/spirosco/upbound-provider-aws/internal/controller/ecs/taskdefinition"
 )
 
 // Setup_ecs creates all controllers with the supplied logger and adds them to

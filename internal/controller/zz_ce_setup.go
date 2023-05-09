@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	anomalymonitor "github.com/upbound/provider-aws/internal/controller/ce/anomalymonitor"
+	anomalymonitor "github.com/spirosco/upbound-provider-aws/internal/controller/ce/anomalymonitor"
 )
 
 // Setup_ce creates all controllers with the supplied logger and adds them to

@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	schedulingpolicy "github.com/upbound/provider-aws/internal/controller/batch/schedulingpolicy"
+	schedulingpolicy "github.com/spirosco/upbound-provider-aws/internal/controller/batch/schedulingpolicy"
 )
 
 // Setup_batch creates all controllers with the supplied logger and adds them to

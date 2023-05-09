@@ -34,7 +34,7 @@ type MetricsDestinationObservation struct {
 type MetricsDestinationParameters struct {
 
 	// The name of the CloudWatch RUM app monitor that will send the metrics.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/rum/v1beta1.AppMonitor
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/rum/v1beta1.AppMonitor
 	// +kubebuilder:validation:Optional
 	AppMonitorName *string `json:"appMonitorName,omitempty" tf:"app_monitor_name,omitempty"`
 
@@ -55,8 +55,8 @@ type MetricsDestinationParameters struct {
 	DestinationArn *string `json:"destinationArn,omitempty" tf:"destination_arn,omitempty"`
 
 	// This parameter is required if Destination is Evidently. If Destination is CloudWatch, do not use this parameter.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	IAMRoleArn *string `json:"iamRoleArn,omitempty" tf:"iam_role_arn,omitempty"`
 

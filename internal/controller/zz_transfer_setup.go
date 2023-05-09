@@ -9,11 +9,11 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	server "github.com/upbound/provider-aws/internal/controller/transfer/server"
-	sshkey "github.com/upbound/provider-aws/internal/controller/transfer/sshkey"
-	tag "github.com/upbound/provider-aws/internal/controller/transfer/tag"
-	user "github.com/upbound/provider-aws/internal/controller/transfer/user"
-	workflow "github.com/upbound/provider-aws/internal/controller/transfer/workflow"
+	server "github.com/spirosco/upbound-provider-aws/internal/controller/transfer/server"
+	sshkey "github.com/spirosco/upbound-provider-aws/internal/controller/transfer/sshkey"
+	tag "github.com/spirosco/upbound-provider-aws/internal/controller/transfer/tag"
+	user "github.com/spirosco/upbound-provider-aws/internal/controller/transfer/user"
+	workflow "github.com/spirosco/upbound-provider-aws/internal/controller/transfer/workflow"
 )
 
 // Setup_transfer creates all controllers with the supplied logger and adds them to

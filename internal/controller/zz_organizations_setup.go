@@ -9,12 +9,12 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	account "github.com/upbound/provider-aws/internal/controller/organizations/account"
-	delegatedadministrator "github.com/upbound/provider-aws/internal/controller/organizations/delegatedadministrator"
-	organization "github.com/upbound/provider-aws/internal/controller/organizations/organization"
-	organizationalunit "github.com/upbound/provider-aws/internal/controller/organizations/organizationalunit"
-	policy "github.com/upbound/provider-aws/internal/controller/organizations/policy"
-	policyattachment "github.com/upbound/provider-aws/internal/controller/organizations/policyattachment"
+	account "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/account"
+	delegatedadministrator "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/delegatedadministrator"
+	organization "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/organization"
+	organizationalunit "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/organizationalunit"
+	policy "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/policy"
+	policyattachment "github.com/spirosco/upbound-provider-aws/internal/controller/organizations/policyattachment"
 )
 
 // Setup_organizations creates all controllers with the supplied logger and adds them to

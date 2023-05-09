@@ -3,7 +3,7 @@ package lambda
 import (
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for lambda group.
@@ -16,7 +16,7 @@ func Configure(p *config.Provider) {
 
 	p.AddResourceConfigurator("aws_lambda_code_signing_config", func(r *config.Resource) {
 		r.References["allowed_publishers.signing_profile_version_arns"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/signer/v1beta1.SigningProfile",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/signer/v1beta1.SigningProfile",
 			Extractor: common.PathARNExtractor,
 		}
 	})
@@ -40,19 +40,19 @@ func Configure(p *config.Provider) {
 	// a future PR.
 	p.AddResourceConfigurator("aws_lambda_function", func(r *config.Resource) {
 		r.References["s3_bucket"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/s3/v1beta1.Bucket",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/s3/v1beta1.Bucket",
 		}
 		r.References["role"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 			Extractor: common.PathARNExtractor,
 		}
 		r.References["vpc_config.security_group_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup",
 			RefFieldName:      "SecurityGroupIDRefs",
 			SelectorFieldName: "SecurityGroupIDSelector",
 		}
 		r.References["vpc_config.subnet_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 			RefFieldName:      "SubnetIDRefs",
 			SelectorFieldName: "SubnetIDSelector",
 		}
@@ -61,11 +61,11 @@ func Configure(p *config.Provider) {
 
 	p.AddResourceConfigurator("aws_lambda_function_event_invoke_config", func(r *config.Resource) {
 		r.References["destination_config.on_failure.destination"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/sqs/v1beta1.Queue",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/sqs/v1beta1.Queue",
 			Extractor: common.PathARNExtractor,
 		}
 		r.References["destination_config.on_success.destination"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/sns/v1beta1.Topic",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/sns/v1beta1.Topic",
 			Extractor: common.PathARNExtractor,
 		}
 		delete(r.References, "function_name")

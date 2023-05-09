@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	accountassignment "github.com/upbound/provider-aws/internal/controller/ssoadmin/accountassignment"
-	managedpolicyattachment "github.com/upbound/provider-aws/internal/controller/ssoadmin/managedpolicyattachment"
-	permissionset "github.com/upbound/provider-aws/internal/controller/ssoadmin/permissionset"
-	permissionsetinlinepolicy "github.com/upbound/provider-aws/internal/controller/ssoadmin/permissionsetinlinepolicy"
+	accountassignment "github.com/spirosco/upbound-provider-aws/internal/controller/ssoadmin/accountassignment"
+	managedpolicyattachment "github.com/spirosco/upbound-provider-aws/internal/controller/ssoadmin/managedpolicyattachment"
+	permissionset "github.com/spirosco/upbound-provider-aws/internal/controller/ssoadmin/permissionset"
+	permissionsetinlinepolicy "github.com/spirosco/upbound-provider-aws/internal/controller/ssoadmin/permissionsetinlinepolicy"
 )
 
 // Setup_ssoadmin creates all controllers with the supplied logger and adds them to

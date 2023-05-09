@@ -28,7 +28,7 @@ type CognitoMemberDefinitionObservation struct {
 type CognitoMemberDefinitionParameters struct {
 
 	// An identifier for an application client. You must create the app client ID using Amazon Cognito.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cognitoidp/v1beta1.UserPoolClient
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cognitoidp/v1beta1.UserPoolClient
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ClientID *string `json:"clientId,omitempty" tf:"client_id,omitempty"`
@@ -42,7 +42,7 @@ type CognitoMemberDefinitionParameters struct {
 	ClientIDSelector *v1.Selector `json:"clientIdSelector,omitempty" tf:"-"`
 
 	// An identifier for a user group.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cognitoidp/v1beta1.UserGroup
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cognitoidp/v1beta1.UserGroup
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	UserGroup *string `json:"userGroup,omitempty" tf:"user_group,omitempty"`
@@ -56,7 +56,7 @@ type CognitoMemberDefinitionParameters struct {
 	UserGroupSelector *v1.Selector `json:"userGroupSelector,omitempty" tf:"-"`
 
 	// An identifier for a user pool. The user pool must be in the same region as the service that you are calling.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cognitoidp/v1beta1.UserPoolDomain
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cognitoidp/v1beta1.UserPoolDomain
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("user_pool_id",false)
 	// +kubebuilder:validation:Optional
 	UserPool *string `json:"userPool,omitempty" tf:"user_pool,omitempty"`
@@ -170,7 +170,7 @@ type WorkteamParameters struct {
 	Tags map[string]*string `json:"tags,omitempty" tf:"tags,omitempty"`
 
 	// The name of the Workteam (must be unique).
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sagemaker/v1beta1.Workforce
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sagemaker/v1beta1.Workforce
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	WorkforceName *string `json:"workforceName,omitempty" tf:"workforce_name,omitempty"`

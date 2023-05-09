@@ -39,7 +39,7 @@ type SMSChannelObservation struct {
 type SMSChannelParameters struct {
 
 	// The application ID.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/pinpoint/v1beta1.App
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/pinpoint/v1beta1.App
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("application_id",true)
 	// +kubebuilder:validation:Optional
 	ApplicationID *string `json:"applicationId,omitempty" tf:"application_id,omitempty"`

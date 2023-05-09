@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	domain "github.com/upbound/provider-aws/internal/controller/simpledb/domain"
+	domain "github.com/spirosco/upbound-provider-aws/internal/controller/simpledb/domain"
 )
 
 // Setup_simpledb creates all controllers with the supplied logger and adds them to

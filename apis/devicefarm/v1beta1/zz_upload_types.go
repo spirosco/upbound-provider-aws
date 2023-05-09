@@ -53,7 +53,7 @@ type UploadParameters struct {
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
 	// The ARN of the project for the upload.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/devicefarm/v1beta1.Project
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/devicefarm/v1beta1.Project
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	ProjectArn *string `json:"projectArn,omitempty" tf:"project_arn,omitempty"`

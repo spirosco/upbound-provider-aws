@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	datalakesettings "github.com/upbound/provider-aws/internal/controller/lakeformation/datalakesettings"
-	permissions "github.com/upbound/provider-aws/internal/controller/lakeformation/permissions"
-	resource "github.com/upbound/provider-aws/internal/controller/lakeformation/resource"
+	datalakesettings "github.com/spirosco/upbound-provider-aws/internal/controller/lakeformation/datalakesettings"
+	permissions "github.com/spirosco/upbound-provider-aws/internal/controller/lakeformation/permissions"
+	resource "github.com/spirosco/upbound-provider-aws/internal/controller/lakeformation/resource"
 )
 
 // Setup_lakeformation creates all controllers with the supplied logger and adds them to

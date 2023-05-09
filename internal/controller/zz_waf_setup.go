@@ -9,17 +9,17 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	bytematchset "github.com/upbound/provider-aws/internal/controller/waf/bytematchset"
-	geomatchset "github.com/upbound/provider-aws/internal/controller/waf/geomatchset"
-	ipset "github.com/upbound/provider-aws/internal/controller/waf/ipset"
-	ratebasedrule "github.com/upbound/provider-aws/internal/controller/waf/ratebasedrule"
-	regexmatchset "github.com/upbound/provider-aws/internal/controller/waf/regexmatchset"
-	regexpatternset "github.com/upbound/provider-aws/internal/controller/waf/regexpatternset"
-	rule "github.com/upbound/provider-aws/internal/controller/waf/rule"
-	sizeconstraintset "github.com/upbound/provider-aws/internal/controller/waf/sizeconstraintset"
-	sqlinjectionmatchset "github.com/upbound/provider-aws/internal/controller/waf/sqlinjectionmatchset"
-	webacl "github.com/upbound/provider-aws/internal/controller/waf/webacl"
-	xssmatchset "github.com/upbound/provider-aws/internal/controller/waf/xssmatchset"
+	bytematchset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/bytematchset"
+	geomatchset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/geomatchset"
+	ipset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/ipset"
+	ratebasedrule "github.com/spirosco/upbound-provider-aws/internal/controller/waf/ratebasedrule"
+	regexmatchset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/regexmatchset"
+	regexpatternset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/regexpatternset"
+	rule "github.com/spirosco/upbound-provider-aws/internal/controller/waf/rule"
+	sizeconstraintset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/sizeconstraintset"
+	sqlinjectionmatchset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/sqlinjectionmatchset"
+	webacl "github.com/spirosco/upbound-provider-aws/internal/controller/waf/webacl"
+	xssmatchset "github.com/spirosco/upbound-provider-aws/internal/controller/waf/xssmatchset"
 )
 
 // Setup_waf creates all controllers with the supplied logger and adds them to

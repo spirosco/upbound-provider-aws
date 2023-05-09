@@ -162,7 +162,7 @@ type IPSetReferenceObservation struct {
 type IPSetReferenceParameters struct {
 
 	// Set of Managed Prefix IP ARN(s)
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.ManagedPrefixList
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.ManagedPrefixList
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	ReferenceArn *string `json:"referenceArn,omitempty" tf:"reference_arn,omitempty"`

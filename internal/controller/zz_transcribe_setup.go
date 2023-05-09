@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	languagemodel "github.com/upbound/provider-aws/internal/controller/transcribe/languagemodel"
-	vocabulary "github.com/upbound/provider-aws/internal/controller/transcribe/vocabulary"
-	vocabularyfilter "github.com/upbound/provider-aws/internal/controller/transcribe/vocabularyfilter"
+	languagemodel "github.com/spirosco/upbound-provider-aws/internal/controller/transcribe/languagemodel"
+	vocabulary "github.com/spirosco/upbound-provider-aws/internal/controller/transcribe/vocabulary"
+	vocabularyfilter "github.com/spirosco/upbound-provider-aws/internal/controller/transcribe/vocabularyfilter"
 )
 
 // Setup_transcribe creates all controllers with the supplied logger and adds them to

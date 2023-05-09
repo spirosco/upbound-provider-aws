@@ -34,7 +34,7 @@ type AwsCloudMapParameters struct {
 
 	// Name of the AWS Cloud Map namespace to use.
 	// Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/servicediscovery/v1beta1.HTTPNamespace
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/servicediscovery/v1beta1.HTTPNamespace
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	NamespaceName *string `json:"namespaceName,omitempty" tf:"namespace_name,omitempty"`
@@ -1351,7 +1351,7 @@ type VirtualNodeObservation struct {
 type VirtualNodeParameters struct {
 
 	// Name of the service mesh in which to create the virtual node. Must be between 1 and 255 characters in length.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appmesh/v1beta1.Mesh
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appmesh/v1beta1.Mesh
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	MeshName *string `json:"meshName,omitempty" tf:"mesh_name,omitempty"`

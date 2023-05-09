@@ -136,7 +136,7 @@ type TrafficMirrorFilterRuleParameters struct {
 	TrafficDirection *string `json:"trafficDirection,omitempty" tf:"traffic_direction,omitempty"`
 
 	// ID of the traffic mirror filter to which this rule should be added
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.TrafficMirrorFilter
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.TrafficMirrorFilter
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	TrafficMirrorFilterID *string `json:"trafficMirrorFilterId,omitempty" tf:"traffic_mirror_filter_id,omitempty"`

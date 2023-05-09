@@ -36,7 +36,7 @@ type ConditionParameters struct {
 	Type *string `json:"type" tf:"type,omitempty"`
 
 	// Value for the key.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/organizations/v1beta1.Organization
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/organizations/v1beta1.Organization
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	Value *string `json:"value,omitempty" tf:"value,omitempty"`

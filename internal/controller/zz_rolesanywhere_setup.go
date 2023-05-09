@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	profile "github.com/upbound/provider-aws/internal/controller/rolesanywhere/profile"
+	profile "github.com/spirosco/upbound-provider-aws/internal/controller/rolesanywhere/profile"
 )
 
 // Setup_rolesanywhere creates all controllers with the supplied logger and adds them to

@@ -111,7 +111,7 @@ type WebhookParameters struct {
 	TargetAction *string `json:"targetAction,omitempty" tf:"target_action,omitempty"`
 
 	// The name of the pipeline.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/codepipeline/v1beta1.Codepipeline
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/codepipeline/v1beta1.Codepipeline
 	// +kubebuilder:validation:Optional
 	TargetPipeline *string `json:"targetPipeline,omitempty" tf:"target_pipeline,omitempty"`
 

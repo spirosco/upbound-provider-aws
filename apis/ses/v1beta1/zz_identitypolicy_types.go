@@ -29,7 +29,7 @@ type IdentityPolicyObservation struct {
 type IdentityPolicyParameters struct {
 
 	// Name or Amazon Resource Name (ARN) of the SES Identity.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ses/v1beta1.DomainIdentity
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ses/v1beta1.DomainIdentity
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	Identity *string `json:"identity,omitempty" tf:"identity,omitempty"`

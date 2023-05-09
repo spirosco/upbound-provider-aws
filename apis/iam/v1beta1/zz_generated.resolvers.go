@@ -9,7 +9,7 @@ import (
 	"context"
 	reference "github.com/crossplane/crossplane-runtime/pkg/reference"
 	errors "github.com/pkg/errors"
-	common "github.com/upbound/provider-aws/config/common"
+	common "github.com/spirosco/upbound-provider-aws/config/common"
 	client "sigs.k8s.io/controller-runtime/pkg/client"
 )
 

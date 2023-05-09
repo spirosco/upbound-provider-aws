@@ -65,7 +65,7 @@ type VPCIpamPoolCidrParameters struct {
 	CidrAuthorizationContext []CidrAuthorizationContextParameters `json:"cidrAuthorizationContext,omitempty" tf:"cidr_authorization_context,omitempty"`
 
 	// The ID of the pool to which you want to assign a CIDR.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.VPCIpamPool
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.VPCIpamPool
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	IpamPoolID *string `json:"ipamPoolId,omitempty" tf:"ipam_pool_id,omitempty"`

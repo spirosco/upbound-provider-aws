@@ -17,7 +17,7 @@ import (
 	"github.com/upbound/upjet/pkg/terraform"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/upbound/provider-aws/apis/v1beta1"
+	"github.com/spirosco/upbound-provider-aws/apis/v1beta1"
 )
 
 const (

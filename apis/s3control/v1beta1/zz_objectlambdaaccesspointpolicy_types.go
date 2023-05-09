@@ -38,7 +38,7 @@ type ObjectLambdaAccessPointPolicyParameters struct {
 	AccountID *string `json:"accountId,omitempty" tf:"account_id,omitempty"`
 
 	// The name of the Object Lambda Access Point.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/s3control/v1beta1.ObjectLambdaAccessPoint
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/s3control/v1beta1.ObjectLambdaAccessPoint
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`

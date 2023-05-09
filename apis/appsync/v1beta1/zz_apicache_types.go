@@ -44,7 +44,7 @@ type APICacheParameters struct {
 	APICachingBehavior *string `json:"apiCachingBehavior,omitempty" tf:"api_caching_behavior,omitempty"`
 
 	// GraphQL API ID.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appsync/v1beta1.GraphQLAPI
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appsync/v1beta1.GraphQLAPI
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	APIID *string `json:"apiId,omitempty" tf:"api_id,omitempty"`

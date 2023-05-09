@@ -51,7 +51,7 @@ type VaultLockParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The name of the Glacier Vault.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/glacier/v1beta1.Vault
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/glacier/v1beta1.Vault
 	// +kubebuilder:validation:Optional
 	VaultName *string `json:"vaultName,omitempty" tf:"vault_name,omitempty"`
 

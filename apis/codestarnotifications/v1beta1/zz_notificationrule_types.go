@@ -68,7 +68,7 @@ type NotificationRuleParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The ARN of the resource to associate with the notification rule.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/codecommit/v1beta1.Repository
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/codecommit/v1beta1.Repository
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	Resource *string `json:"resource,omitempty" tf:"resource,omitempty"`
@@ -109,7 +109,7 @@ type TargetObservation struct {
 type TargetParameters struct {
 
 	// The ARN of notification rule target. For example, a SNS Topic ARN.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sns/v1beta1.Topic
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sns/v1beta1.Topic
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	Address *string `json:"address,omitempty" tf:"address,omitempty"`

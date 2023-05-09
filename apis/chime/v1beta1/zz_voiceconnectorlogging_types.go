@@ -44,7 +44,7 @@ type VoiceConnectorLoggingParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The Amazon Chime Voice Connector ID.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/chime/v1beta1.VoiceConnector
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/chime/v1beta1.VoiceConnector
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	VoiceConnectorID *string `json:"voiceConnectorId,omitempty" tf:"voice_connector_id,omitempty"`

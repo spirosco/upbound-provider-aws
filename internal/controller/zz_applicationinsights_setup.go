@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	application "github.com/upbound/provider-aws/internal/controller/applicationinsights/application"
+	application "github.com/spirosco/upbound-provider-aws/internal/controller/applicationinsights/application"
 )
 
 // Setup_applicationinsights creates all controllers with the supplied logger and adds them to

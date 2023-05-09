@@ -80,8 +80,8 @@ type ProvisioningTemplateParameters struct {
 	PreProvisioningHook []PreProvisioningHookParameters `json:"preProvisioningHook,omitempty" tf:"pre_provisioning_hook,omitempty"`
 
 	// The role ARN for the role associated with the fleet provisioning template. This IoT role grants permission to provision a device.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	ProvisioningRoleArn *string `json:"provisioningRoleArn,omitempty" tf:"provisioning_role_arn,omitempty"`
 

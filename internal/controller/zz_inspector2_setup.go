@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	enabler "github.com/upbound/provider-aws/internal/controller/inspector2/enabler"
+	enabler "github.com/spirosco/upbound-provider-aws/internal/controller/inspector2/enabler"
 )
 
 // Setup_inspector2 creates all controllers with the supplied logger and adds them to

@@ -8,20 +8,20 @@ func Configure(p *config.Provider) {
 		r.ExternalName.OmittedFields = append(r.ExternalName.OmittedFields, "name_prefix")
 		r.References = config.References{
 			"security_groups": {
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup",
 				RefFieldName:      "SecurityGroupRefs",
 				SelectorFieldName: "SecurityGroupSelector",
 			},
 			"subnets": {
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 				RefFieldName:      "SubnetRefs",
 				SelectorFieldName: "SubnetSelector",
 			},
 			"access_logs.bucket": {
-				Type: "github.com/upbound/provider-aws/apis/s3/v1beta1.Bucket",
+				Type: "github.com/spirosco/upbound-provider-aws/apis/s3/v1beta1.Bucket",
 			},
 			"subnet_mapping.subnet_id": {
-				Type: "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+				Type: "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 			},
 		}
 		r.UseAsync = true

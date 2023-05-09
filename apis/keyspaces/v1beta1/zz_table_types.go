@@ -259,7 +259,7 @@ type TableParameters struct {
 	EncryptionSpecification []EncryptionSpecificationParameters `json:"encryptionSpecification,omitempty" tf:"encryption_specification,omitempty"`
 
 	// The name of the keyspace that the table is going to be created in.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/keyspaces/v1beta1.Keyspace
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/keyspaces/v1beta1.Keyspace
 	// +kubebuilder:validation:Optional
 	KeyspaceName *string `json:"keyspaceName,omitempty" tf:"keyspace_name,omitempty"`
 

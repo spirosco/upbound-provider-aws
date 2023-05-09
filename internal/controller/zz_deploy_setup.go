@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	app "github.com/upbound/provider-aws/internal/controller/deploy/app"
-	deploymentconfig "github.com/upbound/provider-aws/internal/controller/deploy/deploymentconfig"
-	deploymentgroup "github.com/upbound/provider-aws/internal/controller/deploy/deploymentgroup"
+	app "github.com/spirosco/upbound-provider-aws/internal/controller/deploy/app"
+	deploymentconfig "github.com/spirosco/upbound-provider-aws/internal/controller/deploy/deploymentconfig"
+	deploymentgroup "github.com/spirosco/upbound-provider-aws/internal/controller/deploy/deploymentgroup"
 )
 
 // Setup_deploy creates all controllers with the supplied logger and adds them to

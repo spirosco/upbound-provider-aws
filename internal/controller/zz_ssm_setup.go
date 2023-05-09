@@ -9,18 +9,18 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	activation "github.com/upbound/provider-aws/internal/controller/ssm/activation"
-	association "github.com/upbound/provider-aws/internal/controller/ssm/association"
-	defaultpatchbaseline "github.com/upbound/provider-aws/internal/controller/ssm/defaultpatchbaseline"
-	document "github.com/upbound/provider-aws/internal/controller/ssm/document"
-	maintenancewindow "github.com/upbound/provider-aws/internal/controller/ssm/maintenancewindow"
-	maintenancewindowtarget "github.com/upbound/provider-aws/internal/controller/ssm/maintenancewindowtarget"
-	maintenancewindowtask "github.com/upbound/provider-aws/internal/controller/ssm/maintenancewindowtask"
-	parameter "github.com/upbound/provider-aws/internal/controller/ssm/parameter"
-	patchbaseline "github.com/upbound/provider-aws/internal/controller/ssm/patchbaseline"
-	patchgroup "github.com/upbound/provider-aws/internal/controller/ssm/patchgroup"
-	resourcedatasync "github.com/upbound/provider-aws/internal/controller/ssm/resourcedatasync"
-	servicesetting "github.com/upbound/provider-aws/internal/controller/ssm/servicesetting"
+	activation "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/activation"
+	association "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/association"
+	defaultpatchbaseline "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/defaultpatchbaseline"
+	document "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/document"
+	maintenancewindow "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/maintenancewindow"
+	maintenancewindowtarget "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/maintenancewindowtarget"
+	maintenancewindowtask "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/maintenancewindowtask"
+	parameter "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/parameter"
+	patchbaseline "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/patchbaseline"
+	patchgroup "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/patchgroup"
+	resourcedatasync "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/resourcedatasync"
+	servicesetting "github.com/spirosco/upbound-provider-aws/internal/controller/ssm/servicesetting"
 )
 
 // Setup_ssm creates all controllers with the supplied logger and adds them to

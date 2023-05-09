@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	application "github.com/upbound/provider-aws/internal/controller/elasticbeanstalk/application"
-	applicationversion "github.com/upbound/provider-aws/internal/controller/elasticbeanstalk/applicationversion"
-	configurationtemplate "github.com/upbound/provider-aws/internal/controller/elasticbeanstalk/configurationtemplate"
+	application "github.com/spirosco/upbound-provider-aws/internal/controller/elasticbeanstalk/application"
+	applicationversion "github.com/spirosco/upbound-provider-aws/internal/controller/elasticbeanstalk/applicationversion"
+	configurationtemplate "github.com/spirosco/upbound-provider-aws/internal/controller/elasticbeanstalk/configurationtemplate"
 )
 
 // Setup_elasticbeanstalk creates all controllers with the supplied logger and adds them to

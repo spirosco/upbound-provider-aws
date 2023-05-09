@@ -28,7 +28,7 @@ type LBAttachmentObservation struct {
 type LBAttachmentParameters struct {
 
 	// The name of the instance to attach to the load balancer.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/lightsail/v1beta1.Instance
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/lightsail/v1beta1.Instance
 	// +kubebuilder:validation:Optional
 	InstanceName *string `json:"instanceName,omitempty" tf:"instance_name,omitempty"`
 
@@ -41,7 +41,7 @@ type LBAttachmentParameters struct {
 	InstanceNameSelector *v1.Selector `json:"instanceNameSelector,omitempty" tf:"-"`
 
 	// The name of the Lightsail load balancer.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/lightsail/v1beta1.LB
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/lightsail/v1beta1.LB
 	// +kubebuilder:validation:Optional
 	LBName *string `json:"lbName,omitempty" tf:"lb_name,omitempty"`
 

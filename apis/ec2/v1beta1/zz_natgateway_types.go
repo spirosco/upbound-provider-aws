@@ -46,7 +46,7 @@ type NATGatewayObservation_2 struct {
 type NATGatewayParameters_2 struct {
 
 	// The Allocation ID of the Elastic IP address for the gateway. Required for connectivity_type of public.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.EIP
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.EIP
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	AllocationID *string `json:"allocationId,omitempty" tf:"allocation_id,omitempty"`

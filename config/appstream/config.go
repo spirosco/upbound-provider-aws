@@ -12,7 +12,7 @@ import (
 func Configure(p *config.Provider) { // nolint:gocyclo
 	p.AddResourceConfigurator("aws_appstream_fleet", func(r *config.Resource) {
 		r.References["vpc_config.subnet_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 			RefFieldName:      "SubnetIDRefs",
 			SelectorFieldName: "SubnetIDSelector",
 		}
@@ -21,7 +21,7 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 	})
 	p.AddResourceConfigurator("aws_appstream_image_builder", func(r *config.Resource) {
 		r.References["vpc_config.subnet_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 			RefFieldName:      "SubnetIDRefs",
 			SelectorFieldName: "SubnetIDSelector",
 		}

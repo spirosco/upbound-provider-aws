@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	channel "github.com/upbound/provider-aws/internal/controller/ivs/channel"
-	recordingconfiguration "github.com/upbound/provider-aws/internal/controller/ivs/recordingconfiguration"
+	channel "github.com/spirosco/upbound-provider-aws/internal/controller/ivs/channel"
+	recordingconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/ivs/recordingconfiguration"
 )
 
 // Setup_ivs creates all controllers with the supplied logger and adds them to

@@ -69,7 +69,7 @@ type UserProfileObservation struct {
 type UserProfileParameters struct {
 
 	// The ID of the associated Domain.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sagemaker/v1beta1.Domain
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sagemaker/v1beta1.Domain
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	DomainID *string `json:"domainId,omitempty" tf:"domain_id,omitempty"`

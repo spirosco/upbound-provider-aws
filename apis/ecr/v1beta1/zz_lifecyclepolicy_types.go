@@ -38,7 +38,7 @@ type LifecyclePolicyParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// Name of the repository to apply the policy.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ecr/v1beta1.Repository
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ecr/v1beta1.Repository
 	// +kubebuilder:validation:Optional
 	Repository *string `json:"repository,omitempty" tf:"repository,omitempty"`
 

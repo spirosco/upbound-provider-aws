@@ -44,7 +44,7 @@ type RevisionParameters struct {
 	Comment *string `json:"comment,omitempty" tf:"comment,omitempty"`
 
 	// The dataset id.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/dataexchange/v1beta1.DataSet
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/dataexchange/v1beta1.DataSet
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	DataSetID *string `json:"dataSetId,omitempty" tf:"data_set_id,omitempty"`

@@ -1,4 +1,4 @@
-module github.com/upbound/provider-aws
+module github.com/spiroscoupbound-provider-aws
 
 go 1.19
 

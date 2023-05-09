@@ -77,7 +77,7 @@ type ReplicationTaskParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The Amazon Resource Name (ARN) of the replication instance.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/dms/v1beta1.ReplicationInstance
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/dms/v1beta1.ReplicationInstance
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("replication_instance_arn",true)
 	// +kubebuilder:validation:Optional
 	ReplicationInstanceArn *string `json:"replicationInstanceArn,omitempty" tf:"replication_instance_arn,omitempty"`
@@ -95,7 +95,7 @@ type ReplicationTaskParameters struct {
 	ReplicationTaskSettings *string `json:"replicationTaskSettings,omitempty" tf:"replication_task_settings,omitempty"`
 
 	// The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/dms/v1beta1.Endpoint
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/dms/v1beta1.Endpoint
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("endpoint_arn",true)
 	// +kubebuilder:validation:Optional
 	SourceEndpointArn *string `json:"sourceEndpointArn,omitempty" tf:"source_endpoint_arn,omitempty"`
@@ -121,7 +121,7 @@ type ReplicationTaskParameters struct {
 	Tags map[string]*string `json:"tags,omitempty" tf:"tags,omitempty"`
 
 	// The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/dms/v1beta1.Endpoint
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/dms/v1beta1.Endpoint
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("endpoint_arn",true)
 	// +kubebuilder:validation:Optional
 	TargetEndpointArn *string `json:"targetEndpointArn,omitempty" tf:"target_endpoint_arn,omitempty"`

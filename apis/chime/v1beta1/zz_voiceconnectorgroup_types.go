@@ -29,7 +29,7 @@ type ConnectorParameters struct {
 	Priority *float64 `json:"priority" tf:"priority,omitempty"`
 
 	// The Amazon Chime Voice Connector ID.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/chime/v1beta1.VoiceConnector
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/chime/v1beta1.VoiceConnector
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	VoiceConnectorID *string `json:"voiceConnectorId,omitempty" tf:"voice_connector_id,omitempty"`

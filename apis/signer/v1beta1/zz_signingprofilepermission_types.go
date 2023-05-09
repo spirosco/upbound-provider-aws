@@ -47,7 +47,7 @@ type SigningProfilePermissionParameters struct {
 	Principal *string `json:"principal,omitempty" tf:"principal,omitempty"`
 
 	// Name of the signing profile to add the cross-account permissions.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/signer/v1beta1.SigningProfile
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/signer/v1beta1.SigningProfile
 	// +kubebuilder:validation:Optional
 	ProfileName *string `json:"profileName,omitempty" tf:"profile_name,omitempty"`
 
@@ -60,7 +60,7 @@ type SigningProfilePermissionParameters struct {
 	ProfileNameSelector *v1.Selector `json:"profileNameSelector,omitempty" tf:"-"`
 
 	// The signing profile version that a permission applies to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/signer/v1beta1.SigningProfile
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/signer/v1beta1.SigningProfile
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("version",true)
 	// +kubebuilder:validation:Optional
 	ProfileVersion *string `json:"profileVersion,omitempty" tf:"profile_version,omitempty"`

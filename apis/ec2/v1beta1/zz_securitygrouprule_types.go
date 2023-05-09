@@ -83,7 +83,7 @@ type SecurityGroupRuleParameters_2 struct {
 	PrefixListIDSelector *v1.Selector `json:"prefixListIdSelector,omitempty" tf:"-"`
 
 	// List of Prefix List IDs.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ec2/v1beta1.ManagedPrefixList
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.ManagedPrefixList
 	// +crossplane:generate:reference:refFieldName=PrefixListIDRefs
 	// +crossplane:generate:reference:selectorFieldName=PrefixListIDSelector
 	// +kubebuilder:validation:Optional

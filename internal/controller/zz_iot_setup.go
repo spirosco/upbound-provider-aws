@@ -9,19 +9,19 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	certificate "github.com/upbound/provider-aws/internal/controller/iot/certificate"
-	indexingconfiguration "github.com/upbound/provider-aws/internal/controller/iot/indexingconfiguration"
-	loggingoptions "github.com/upbound/provider-aws/internal/controller/iot/loggingoptions"
-	policy "github.com/upbound/provider-aws/internal/controller/iot/policy"
-	policyattachment "github.com/upbound/provider-aws/internal/controller/iot/policyattachment"
-	provisioningtemplate "github.com/upbound/provider-aws/internal/controller/iot/provisioningtemplate"
-	rolealias "github.com/upbound/provider-aws/internal/controller/iot/rolealias"
-	thing "github.com/upbound/provider-aws/internal/controller/iot/thing"
-	thinggroup "github.com/upbound/provider-aws/internal/controller/iot/thinggroup"
-	thinggroupmembership "github.com/upbound/provider-aws/internal/controller/iot/thinggroupmembership"
-	thingprincipalattachment "github.com/upbound/provider-aws/internal/controller/iot/thingprincipalattachment"
-	thingtype "github.com/upbound/provider-aws/internal/controller/iot/thingtype"
-	topicrule "github.com/upbound/provider-aws/internal/controller/iot/topicrule"
+	certificate "github.com/spirosco/upbound-provider-aws/internal/controller/iot/certificate"
+	indexingconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/iot/indexingconfiguration"
+	loggingoptions "github.com/spirosco/upbound-provider-aws/internal/controller/iot/loggingoptions"
+	policy "github.com/spirosco/upbound-provider-aws/internal/controller/iot/policy"
+	policyattachment "github.com/spirosco/upbound-provider-aws/internal/controller/iot/policyattachment"
+	provisioningtemplate "github.com/spirosco/upbound-provider-aws/internal/controller/iot/provisioningtemplate"
+	rolealias "github.com/spirosco/upbound-provider-aws/internal/controller/iot/rolealias"
+	thing "github.com/spirosco/upbound-provider-aws/internal/controller/iot/thing"
+	thinggroup "github.com/spirosco/upbound-provider-aws/internal/controller/iot/thinggroup"
+	thinggroupmembership "github.com/spirosco/upbound-provider-aws/internal/controller/iot/thinggroupmembership"
+	thingprincipalattachment "github.com/spirosco/upbound-provider-aws/internal/controller/iot/thingprincipalattachment"
+	thingtype "github.com/spirosco/upbound-provider-aws/internal/controller/iot/thingtype"
+	topicrule "github.com/spirosco/upbound-provider-aws/internal/controller/iot/topicrule"
 )
 
 // Setup_iot creates all controllers with the supplied logger and adds them to

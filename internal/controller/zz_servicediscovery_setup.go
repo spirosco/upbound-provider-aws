@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	httpnamespace "github.com/upbound/provider-aws/internal/controller/servicediscovery/httpnamespace"
-	privatednsnamespace "github.com/upbound/provider-aws/internal/controller/servicediscovery/privatednsnamespace"
-	publicdnsnamespace "github.com/upbound/provider-aws/internal/controller/servicediscovery/publicdnsnamespace"
-	service "github.com/upbound/provider-aws/internal/controller/servicediscovery/service"
+	httpnamespace "github.com/spirosco/upbound-provider-aws/internal/controller/servicediscovery/httpnamespace"
+	privatednsnamespace "github.com/spirosco/upbound-provider-aws/internal/controller/servicediscovery/privatednsnamespace"
+	publicdnsnamespace "github.com/spirosco/upbound-provider-aws/internal/controller/servicediscovery/publicdnsnamespace"
+	service "github.com/spirosco/upbound-provider-aws/internal/controller/servicediscovery/service"
 )
 
 // Setup_servicediscovery creates all controllers with the supplied logger and adds them to

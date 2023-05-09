@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	analyzer "github.com/upbound/provider-aws/internal/controller/accessanalyzer/analyzer"
-	archiverule "github.com/upbound/provider-aws/internal/controller/accessanalyzer/archiverule"
+	analyzer "github.com/spirosco/upbound-provider-aws/internal/controller/accessanalyzer/analyzer"
+	archiverule "github.com/spirosco/upbound-provider-aws/internal/controller/accessanalyzer/archiverule"
 )
 
 // Setup_accessanalyzer creates all controllers with the supplied logger and adds them to

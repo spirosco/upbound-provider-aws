@@ -34,7 +34,7 @@ type TriggerParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The name for the repository. This needs to be less than 100 characters.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/codecommit/v1beta1.Repository
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/codecommit/v1beta1.Repository
 	// +kubebuilder:validation:Optional
 	RepositoryName *string `json:"repositoryName,omitempty" tf:"repository_name,omitempty"`
 
@@ -79,7 +79,7 @@ type TriggerTriggerParameters struct {
 	CustomData *string `json:"customData,omitempty" tf:"custom_data,omitempty"`
 
 	// The ARN of the resource that is the target for a trigger. For example, the ARN of a topic in Amazon Simple Notification Service (SNS).
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sns/v1beta1.Topic
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sns/v1beta1.Topic
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	DestinationArn *string `json:"destinationArn,omitempty" tf:"destination_arn,omitempty"`

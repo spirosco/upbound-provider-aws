@@ -39,8 +39,8 @@ type ControlPanelObservation struct {
 type ControlPanelParameters struct {
 
 	// ARN of the cluster in which this control panel will reside.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/route53recoverycontrolconfig/v1beta1.Cluster
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.TerraformID()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/route53recoverycontrolconfig/v1beta1.Cluster
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.TerraformID()
 	// +kubebuilder:validation:Optional
 	ClusterArn *string `json:"clusterArn,omitempty" tf:"cluster_arn,omitempty"`
 

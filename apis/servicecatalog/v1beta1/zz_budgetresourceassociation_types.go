@@ -28,7 +28,7 @@ type BudgetResourceAssociationObservation struct {
 type BudgetResourceAssociationParameters struct {
 
 	// Budget name.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/budgets/v1beta1.Budget
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/budgets/v1beta1.Budget
 	// +kubebuilder:validation:Optional
 	BudgetName *string `json:"budgetName,omitempty" tf:"budget_name,omitempty"`
 

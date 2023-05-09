@@ -27,7 +27,7 @@ func Configure(p *config.Provider) {
 	})
 	p.AddResourceConfigurator("aws_organizations_delegated_administrator", func(r *config.Resource) {
 		r.References["account_id"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/organizations/v1beta1.Account",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/organizations/v1beta1.Account",
 		}
 	})
 	// We are deleting this reference as we have three different types: Organization Account,

@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	stream "github.com/upbound/provider-aws/internal/controller/kinesis/stream"
-	streamconsumer "github.com/upbound/provider-aws/internal/controller/kinesis/streamconsumer"
+	stream "github.com/spirosco/upbound-provider-aws/internal/controller/kinesis/stream"
+	streamconsumer "github.com/spirosco/upbound-provider-aws/internal/controller/kinesis/streamconsumer"
 )
 
 // Setup_kinesis creates all controllers with the supplied logger and adds them to

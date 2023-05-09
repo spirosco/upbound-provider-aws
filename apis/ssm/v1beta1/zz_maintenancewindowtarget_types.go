@@ -67,7 +67,7 @@ type MaintenanceWindowTargetParameters struct {
 	Targets []MaintenanceWindowTargetTargetsParameters `json:"targets,omitempty" tf:"targets,omitempty"`
 
 	// The Id of the maintenance window to register the target with.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ssm/v1beta1.MaintenanceWindow
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ssm/v1beta1.MaintenanceWindow
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	WindowID *string `json:"windowId,omitempty" tf:"window_id,omitempty"`

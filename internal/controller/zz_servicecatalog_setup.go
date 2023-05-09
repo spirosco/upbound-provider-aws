@@ -9,17 +9,17 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	budgetresourceassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/budgetresourceassociation"
-	constraint "github.com/upbound/provider-aws/internal/controller/servicecatalog/constraint"
-	portfolio "github.com/upbound/provider-aws/internal/controller/servicecatalog/portfolio"
-	portfolioshare "github.com/upbound/provider-aws/internal/controller/servicecatalog/portfolioshare"
-	principalportfolioassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/principalportfolioassociation"
-	product "github.com/upbound/provider-aws/internal/controller/servicecatalog/product"
-	productportfolioassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/productportfolioassociation"
-	provisioningartifact "github.com/upbound/provider-aws/internal/controller/servicecatalog/provisioningartifact"
-	serviceaction "github.com/upbound/provider-aws/internal/controller/servicecatalog/serviceaction"
-	tagoption "github.com/upbound/provider-aws/internal/controller/servicecatalog/tagoption"
-	tagoptionresourceassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/tagoptionresourceassociation"
+	budgetresourceassociation "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/budgetresourceassociation"
+	constraint "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/constraint"
+	portfolio "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/portfolio"
+	portfolioshare "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/portfolioshare"
+	principalportfolioassociation "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/principalportfolioassociation"
+	product "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/product"
+	productportfolioassociation "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/productportfolioassociation"
+	provisioningartifact "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/provisioningartifact"
+	serviceaction "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/serviceaction"
+	tagoption "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/tagoption"
+	tagoptionresourceassociation "github.com/spirosco/upbound-provider-aws/internal/controller/servicecatalog/tagoptionresourceassociation"
 )
 
 // Setup_servicecatalog creates all controllers with the supplied logger and adds them to

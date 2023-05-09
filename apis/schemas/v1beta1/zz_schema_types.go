@@ -71,7 +71,7 @@ type SchemaParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The name of the registry in which this schema belongs.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/schemas/v1beta1.Registry
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/schemas/v1beta1.Registry
 	// +kubebuilder:validation:Optional
 	RegistryName *string `json:"registryName,omitempty" tf:"registry_name,omitempty"`
 

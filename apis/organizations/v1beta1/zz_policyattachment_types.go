@@ -29,7 +29,7 @@ type PolicyAttachmentObservation struct {
 type PolicyAttachmentParameters struct {
 
 	// The unique identifier (ID) of the policy that you want to attach to the target.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/organizations/v1beta1.Policy
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/organizations/v1beta1.Policy
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	PolicyID *string `json:"policyId,omitempty" tf:"policy_id,omitempty"`

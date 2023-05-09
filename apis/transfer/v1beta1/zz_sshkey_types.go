@@ -39,7 +39,7 @@ type SSHKeyParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// (Requirement) The Server ID of the Transfer Server (e.g., s-12345678)
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/transfer/v1beta1.Server
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/transfer/v1beta1.Server
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	ServerID *string `json:"serverId,omitempty" tf:"server_id,omitempty"`
@@ -53,7 +53,7 @@ type SSHKeyParameters struct {
 	ServerIDSelector *v1.Selector `json:"serverIdSelector,omitempty" tf:"-"`
 
 	// (Requirement) The name of the user account that is assigned to one or more servers.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/transfer/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/transfer/v1beta1.User
 	// +kubebuilder:validation:Optional
 	UserName *string `json:"userName,omitempty" tf:"user_name,omitempty"`
 

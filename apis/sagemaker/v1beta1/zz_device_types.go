@@ -63,7 +63,7 @@ type DeviceParameters struct {
 	Device []DeviceDeviceParameters `json:"device,omitempty" tf:"device,omitempty"`
 
 	// The name of the Device Fleet.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sagemaker/v1beta1.DeviceFleet
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sagemaker/v1beta1.DeviceFleet
 	// +kubebuilder:validation:Optional
 	DeviceFleetName *string `json:"deviceFleetName,omitempty" tf:"device_fleet_name,omitempty"`
 

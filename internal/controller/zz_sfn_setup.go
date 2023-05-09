@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	activity "github.com/upbound/provider-aws/internal/controller/sfn/activity"
-	statemachine "github.com/upbound/provider-aws/internal/controller/sfn/statemachine"
+	activity "github.com/spirosco/upbound-provider-aws/internal/controller/sfn/activity"
+	statemachine "github.com/spirosco/upbound-provider-aws/internal/controller/sfn/statemachine"
 )
 
 // Setup_sfn creates all controllers with the supplied logger and adds them to

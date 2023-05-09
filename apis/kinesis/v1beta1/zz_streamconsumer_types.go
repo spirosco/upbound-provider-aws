@@ -43,8 +43,8 @@ type StreamConsumerParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// –  Amazon Resource Name (ARN) of the data stream the consumer is registered with.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/kinesis/v1beta1.Stream
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.TerraformID()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/kinesis/v1beta1.Stream
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.TerraformID()
 	// +kubebuilder:validation:Optional
 	StreamArn *string `json:"streamArn,omitempty" tf:"stream_arn,omitempty"`
 

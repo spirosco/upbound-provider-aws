@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	servicequota "github.com/upbound/provider-aws/internal/controller/servicequotas/servicequota"
+	servicequota "github.com/spirosco/upbound-provider-aws/internal/controller/servicequotas/servicequota"
 )
 
 // Setup_servicequotas creates all controllers with the supplied logger and adds them to

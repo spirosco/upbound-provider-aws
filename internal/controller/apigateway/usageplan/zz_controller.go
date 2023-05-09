@@ -18,8 +18,8 @@ import (
 	"github.com/upbound/upjet/pkg/terraform"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	v1beta1 "github.com/upbound/provider-aws/apis/apigateway/v1beta1"
-	features "github.com/upbound/provider-aws/internal/features"
+	v1beta1 "github.com/spirosco/upbound-provider-aws/apis/apigateway/v1beta1"
+	features "github.com/spirosco/upbound-provider-aws/internal/features"
 )
 
 // Setup adds a controller that reconciles UsagePlan managed resources.

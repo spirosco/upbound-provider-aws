@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	alertmanagerdefinition "github.com/upbound/provider-aws/internal/controller/amp/alertmanagerdefinition"
-	rulegroupnamespace "github.com/upbound/provider-aws/internal/controller/amp/rulegroupnamespace"
-	workspace "github.com/upbound/provider-aws/internal/controller/amp/workspace"
+	alertmanagerdefinition "github.com/spirosco/upbound-provider-aws/internal/controller/amp/alertmanagerdefinition"
+	rulegroupnamespace "github.com/spirosco/upbound-provider-aws/internal/controller/amp/rulegroupnamespace"
+	workspace "github.com/spirosco/upbound-provider-aws/internal/controller/amp/workspace"
 )
 
 // Setup_amp creates all controllers with the supplied logger and adds them to

@@ -121,7 +121,7 @@ kind: Provider
 metadata:
   name: provider-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws:v0.4.0
+  package: xpkg.upbound.io/spirosco/upbound-provider-aws:v0.4.0
   packagePullSecrets:
     - name: package-pull-secret
   controllerConfigRef:

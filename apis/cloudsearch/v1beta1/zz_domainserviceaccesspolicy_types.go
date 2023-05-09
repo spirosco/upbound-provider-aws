@@ -31,7 +31,7 @@ type DomainServiceAccessPolicyParameters struct {
 	AccessPolicy *string `json:"accessPolicy,omitempty" tf:"access_policy,omitempty"`
 
 	// The CloudSearch domain name the policy applies to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/cloudsearch/v1beta1.Domain
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/cloudsearch/v1beta1.Domain
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	DomainName *string `json:"domainName,omitempty" tf:"domain_name,omitempty"`

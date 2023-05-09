@@ -46,8 +46,8 @@ type GameSessionQueueParameters struct {
 	Destinations []*string `json:"destinations,omitempty" tf:"destinations,omitempty"`
 
 	// An SNS topic ARN that is set up to receive game session placement notifications.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/sns/v1beta1.Topic
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/sns/v1beta1.Topic
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	NotificationTarget *string `json:"notificationTarget,omitempty" tf:"notification_target,omitempty"`
 

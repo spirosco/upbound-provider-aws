@@ -88,7 +88,7 @@ type SnapshotObservation struct {
 type SnapshotParameters struct {
 
 	// Name of the MemoryDB cluster to take a snapshot of.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/memorydb/v1beta1.Cluster
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/memorydb/v1beta1.Cluster
 	// +kubebuilder:validation:Optional
 	ClusterName *string `json:"clusterName,omitempty" tf:"cluster_name,omitempty"`
 
@@ -101,7 +101,7 @@ type SnapshotParameters struct {
 	ClusterNameSelector *v1.Selector `json:"clusterNameSelector,omitempty" tf:"-"`
 
 	// ARN of the KMS key used to encrypt the snapshot at rest.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/kms/v1beta1.Key
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/kms/v1beta1.Key
 	// +kubebuilder:validation:Optional
 	KMSKeyArn *string `json:"kmsKeyArn,omitempty" tf:"kms_key_arn,omitempty"`
 

@@ -42,7 +42,7 @@ type LicenseAssociationParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The workspace id.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/grafana/v1beta1.Workspace
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/grafana/v1beta1.Workspace
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	WorkspaceID *string `json:"workspaceId,omitempty" tf:"workspace_id,omitempty"`

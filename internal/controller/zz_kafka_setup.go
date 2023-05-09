@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	cluster "github.com/upbound/provider-aws/internal/controller/kafka/cluster"
-	configuration "github.com/upbound/provider-aws/internal/controller/kafka/configuration"
+	cluster "github.com/spirosco/upbound-provider-aws/internal/controller/kafka/cluster"
+	configuration "github.com/spirosco/upbound-provider-aws/internal/controller/kafka/configuration"
 )
 
 // Setup_kafka creates all controllers with the supplied logger and adds them to

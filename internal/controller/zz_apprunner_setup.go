@@ -9,11 +9,11 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	autoscalingconfigurationversion "github.com/upbound/provider-aws/internal/controller/apprunner/autoscalingconfigurationversion"
-	connection "github.com/upbound/provider-aws/internal/controller/apprunner/connection"
-	observabilityconfiguration "github.com/upbound/provider-aws/internal/controller/apprunner/observabilityconfiguration"
-	service "github.com/upbound/provider-aws/internal/controller/apprunner/service"
-	vpcconnector "github.com/upbound/provider-aws/internal/controller/apprunner/vpcconnector"
+	autoscalingconfigurationversion "github.com/spirosco/upbound-provider-aws/internal/controller/apprunner/autoscalingconfigurationversion"
+	connection "github.com/spirosco/upbound-provider-aws/internal/controller/apprunner/connection"
+	observabilityconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/apprunner/observabilityconfiguration"
+	service "github.com/spirosco/upbound-provider-aws/internal/controller/apprunner/service"
+	vpcconnector "github.com/spirosco/upbound-provider-aws/internal/controller/apprunner/vpcconnector"
 )
 
 // Setup_apprunner creates all controllers with the supplied logger and adds them to

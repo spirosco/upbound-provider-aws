@@ -84,7 +84,7 @@ type ComponentParameters struct {
 	Description *string `json:"description,omitempty" tf:"description,omitempty"`
 
 	// Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/kms/v1beta1.Key
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/kms/v1beta1.Key
 	// +kubebuilder:validation:Optional
 	KMSKeyID *string `json:"kmsKeyId,omitempty" tf:"kms_key_id,omitempty"`
 

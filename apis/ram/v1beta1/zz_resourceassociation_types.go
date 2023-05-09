@@ -37,7 +37,7 @@ type ResourceAssociationParameters struct {
 	ResourceArn *string `json:"resourceArn,omitempty" tf:"resource_arn,omitempty"`
 
 	// Amazon Resource Name (ARN) of the RAM Resource Share.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ram/v1beta1.ResourceShare
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ram/v1beta1.ResourceShare
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	ResourceShareArn *string `json:"resourceShareArn,omitempty" tf:"resource_share_arn,omitempty"`

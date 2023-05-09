@@ -34,7 +34,7 @@ type UserStackAssociationObservation struct {
 type UserStackAssociationParameters struct {
 
 	// Authentication type for the user.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appstream/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appstream/v1beta1.User
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("authentication_type",false)
 	// +kubebuilder:validation:Optional
 	AuthenticationType *string `json:"authenticationType,omitempty" tf:"authentication_type,omitempty"`
@@ -57,7 +57,7 @@ type UserStackAssociationParameters struct {
 	SendEmailNotification *bool `json:"sendEmailNotification,omitempty" tf:"send_email_notification,omitempty"`
 
 	// Name of the stack that is associated with the user.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appstream/v1beta1.Stack
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appstream/v1beta1.Stack
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("name",false)
 	// +kubebuilder:validation:Optional
 	StackName *string `json:"stackName,omitempty" tf:"stack_name,omitempty"`
@@ -71,7 +71,7 @@ type UserStackAssociationParameters struct {
 	StackNameSelector *v1.Selector `json:"stackNameSelector,omitempty" tf:"-"`
 
 	// Email address of the user who is associated with the stack.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/appstream/v1beta1.User
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/appstream/v1beta1.User
 	// +kubebuilder:validation:Optional
 	UserName *string `json:"userName,omitempty" tf:"user_name,omitempty"`
 

@@ -9,13 +9,13 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	awsconfigurationrecorderstatus "github.com/upbound/provider-aws/internal/controller/configservice/awsconfigurationrecorderstatus"
-	configrule "github.com/upbound/provider-aws/internal/controller/configservice/configrule"
-	configurationaggregator "github.com/upbound/provider-aws/internal/controller/configservice/configurationaggregator"
-	configurationrecorder "github.com/upbound/provider-aws/internal/controller/configservice/configurationrecorder"
-	conformancepack "github.com/upbound/provider-aws/internal/controller/configservice/conformancepack"
-	deliverychannel "github.com/upbound/provider-aws/internal/controller/configservice/deliverychannel"
-	remediationconfiguration "github.com/upbound/provider-aws/internal/controller/configservice/remediationconfiguration"
+	awsconfigurationrecorderstatus "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/awsconfigurationrecorderstatus"
+	configrule "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/configrule"
+	configurationaggregator "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/configurationaggregator"
+	configurationrecorder "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/configurationrecorder"
+	conformancepack "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/conformancepack"
+	deliverychannel "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/deliverychannel"
+	remediationconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/configservice/remediationconfiguration"
 )
 
 // Setup_configservice creates all controllers with the supplied logger and adds them to

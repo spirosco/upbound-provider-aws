@@ -9,9 +9,9 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	cognitoidentitypoolproviderprincipaltag "github.com/upbound/provider-aws/internal/controller/cognitoidentity/cognitoidentitypoolproviderprincipaltag"
-	pool "github.com/upbound/provider-aws/internal/controller/cognitoidentity/pool"
-	poolrolesattachment "github.com/upbound/provider-aws/internal/controller/cognitoidentity/poolrolesattachment"
+	cognitoidentitypoolproviderprincipaltag "github.com/spirosco/upbound-provider-aws/internal/controller/cognitoidentity/cognitoidentitypoolproviderprincipaltag"
+	pool "github.com/spirosco/upbound-provider-aws/internal/controller/cognitoidentity/pool"
+	poolrolesattachment "github.com/spirosco/upbound-provider-aws/internal/controller/cognitoidentity/poolrolesattachment"
 )
 
 // Setup_cognitoidentity creates all controllers with the supplied logger and adds them to

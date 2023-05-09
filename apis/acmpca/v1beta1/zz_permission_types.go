@@ -40,7 +40,7 @@ type PermissionParameters struct {
 	Actions []*string `json:"actions,omitempty" tf:"actions,omitempty"`
 
 	// ARN of the CA that grants the permissions.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/acmpca/v1beta1.CertificateAuthority
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/acmpca/v1beta1.CertificateAuthority
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("arn",true)
 	// +kubebuilder:validation:Optional
 	CertificateAuthorityArn *string `json:"certificateAuthorityArn,omitempty" tf:"certificate_authority_arn,omitempty"`

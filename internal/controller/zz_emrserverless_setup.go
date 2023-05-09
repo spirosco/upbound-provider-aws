@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	application "github.com/upbound/provider-aws/internal/controller/emrserverless/application"
+	application "github.com/spirosco/upbound-provider-aws/internal/controller/emrserverless/application"
 )
 
 // Setup_emrserverless creates all controllers with the supplied logger and adds them to

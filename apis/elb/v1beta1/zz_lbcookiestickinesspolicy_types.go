@@ -50,7 +50,7 @@ type LBCookieStickinessPolicyParameters struct {
 
 	// The load balancer to which the policy
 	// should be attached.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/elb/v1beta1.ELB
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/elb/v1beta1.ELB
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	LoadBalancer *string `json:"loadBalancer,omitempty" tf:"load_balancer,omitempty"`

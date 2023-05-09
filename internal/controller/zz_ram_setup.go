@@ -9,8 +9,8 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	resourceassociation "github.com/upbound/provider-aws/internal/controller/ram/resourceassociation"
-	resourceshare "github.com/upbound/provider-aws/internal/controller/ram/resourceshare"
+	resourceassociation "github.com/spirosco/upbound-provider-aws/internal/controller/ram/resourceassociation"
+	resourceshare "github.com/spirosco/upbound-provider-aws/internal/controller/ram/resourceshare"
 )
 
 // Setup_ram creates all controllers with the supplied logger and adds them to

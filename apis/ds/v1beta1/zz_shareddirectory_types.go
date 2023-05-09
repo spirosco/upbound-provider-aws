@@ -34,7 +34,7 @@ type SharedDirectoryObservation struct {
 type SharedDirectoryParameters struct {
 
 	// Identifier of the Managed Microsoft AD directory that you want to share with other accounts.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/ds/v1beta1.Directory
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/ds/v1beta1.Directory
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	DirectoryID *string `json:"directoryId,omitempty" tf:"directory_id,omitempty"`

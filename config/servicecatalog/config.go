@@ -17,7 +17,7 @@ package servicecatalog
 import (
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for servicecatalog group.
@@ -59,7 +59,7 @@ func Configure(p *config.Provider) {
 			Type: "Portfolio",
 		}
 		r.References["principal_arn"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.User",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.User",
 			Extractor: common.PathARNExtractor,
 		}
 	})
@@ -69,7 +69,7 @@ func Configure(p *config.Provider) {
 			Type: "Product",
 		}
 		r.References["budget_name"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/budgets/v1beta1.Budget",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/budgets/v1beta1.Budget",
 		}
 	})
 }

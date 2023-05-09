@@ -94,7 +94,7 @@ type RegexMatchTupleParameters struct {
 	FieldToMatch []RegexMatchTupleFieldToMatchParameters `json:"fieldToMatch" tf:"field_to_match,omitempty"`
 
 	// The ID of a Regex Pattern Set.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/waf/v1beta1.RegexPatternSet
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/waf/v1beta1.RegexPatternSet
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	RegexPatternSetID *string `json:"regexPatternSetId,omitempty" tf:"regex_pattern_set_id,omitempty"`

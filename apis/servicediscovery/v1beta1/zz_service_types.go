@@ -32,7 +32,7 @@ type DNSConfigParameters struct {
 	DNSRecords []DNSRecordsParameters `json:"dnsRecords" tf:"dns_records,omitempty"`
 
 	// The ID of the namespace to use for DNS configuration.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/servicediscovery/v1beta1.PrivateDNSNamespace
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/servicediscovery/v1beta1.PrivateDNSNamespace
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	NamespaceID *string `json:"namespaceId,omitempty" tf:"namespace_id,omitempty"`

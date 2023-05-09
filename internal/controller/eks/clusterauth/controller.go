@@ -25,10 +25,10 @@ import (
 	tjcontroller "github.com/upbound/upjet/pkg/controller"
 	ujresource "github.com/upbound/upjet/pkg/resource"
 
-	"github.com/upbound/provider-aws/apis/eks/v1beta1"
-	"github.com/upbound/provider-aws/apis/v1alpha1"
-	"github.com/upbound/provider-aws/internal/clients"
-	"github.com/upbound/provider-aws/internal/features"
+	"github.com/spirosco/upbound-provider-aws/apis/eks/v1beta1"
+	"github.com/spirosco/upbound-provider-aws/apis/v1alpha1"
+	"github.com/spirosco/upbound-provider-aws/internal/clients"
+	"github.com/spirosco/upbound-provider-aws/internal/features"
 )
 
 const (

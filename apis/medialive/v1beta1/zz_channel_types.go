@@ -798,8 +798,8 @@ type ChannelParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// Concise argument description.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	RoleArn *string `json:"roleArn,omitempty" tf:"role_arn,omitempty"`
 
@@ -2597,7 +2597,7 @@ type InputAttachmentsParameters struct {
 	InputAttachmentName *string `json:"inputAttachmentName" tf:"input_attachment_name,omitempty"`
 
 	// The ID of the input.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/medialive/v1beta1.Input
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/medialive/v1beta1.Input
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	InputID *string `json:"inputId,omitempty" tf:"input_id,omitempty"`

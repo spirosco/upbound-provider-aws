@@ -9,14 +9,14 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	application "github.com/upbound/provider-aws/internal/controller/appconfig/application"
-	configurationprofile "github.com/upbound/provider-aws/internal/controller/appconfig/configurationprofile"
-	deployment "github.com/upbound/provider-aws/internal/controller/appconfig/deployment"
-	deploymentstrategy "github.com/upbound/provider-aws/internal/controller/appconfig/deploymentstrategy"
-	environment "github.com/upbound/provider-aws/internal/controller/appconfig/environment"
-	extension "github.com/upbound/provider-aws/internal/controller/appconfig/extension"
-	extensionassociation "github.com/upbound/provider-aws/internal/controller/appconfig/extensionassociation"
-	hostedconfigurationversion "github.com/upbound/provider-aws/internal/controller/appconfig/hostedconfigurationversion"
+	application "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/application"
+	configurationprofile "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/configurationprofile"
+	deployment "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/deployment"
+	deploymentstrategy "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/deploymentstrategy"
+	environment "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/environment"
+	extension "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/extension"
+	extensionassociation "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/extensionassociation"
+	hostedconfigurationversion "github.com/spirosco/upbound-provider-aws/internal/controller/appconfig/hostedconfigurationversion"
 )
 
 // Setup_appconfig creates all controllers with the supplied logger and adds them to

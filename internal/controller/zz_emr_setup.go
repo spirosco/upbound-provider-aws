@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	securityconfiguration "github.com/upbound/provider-aws/internal/controller/emr/securityconfiguration"
+	securityconfiguration "github.com/spirosco/upbound-provider-aws/internal/controller/emr/securityconfiguration"
 )
 
 // Setup_emr creates all controllers with the supplied logger and adds them to

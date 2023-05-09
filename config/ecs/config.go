@@ -13,7 +13,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for ecs group.
@@ -33,10 +33,10 @@ func Configure(p *config.Provider) {
 
 		r.References = config.References{
 			"execute_command_configuration.kms_key_id": config.Reference{
-				Type: "github.com/upbound/provider-aws/apis/kms/v1beta1.Key",
+				Type: "github.com/spirosco/upbound-provider-aws/apis/kms/v1beta1.Key",
 			},
 			"log_configuration.s3_bucket_name": config.Reference{
-				Type: "github.com/upbound/provider-aws/apis/s3/v1beta1.Bucket",
+				Type: "github.com/spirosco/upbound-provider-aws/apis/s3/v1beta1.Bucket",
 			},
 		}
 
@@ -67,16 +67,16 @@ func Configure(p *config.Provider) {
 				Type: "TaskDefinition",
 			},
 			"iam_role": config.Reference{
-				Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 				Extractor: common.PathARNExtractor,
 			},
 			"network_configuration.subnets": config.Reference{
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 				RefFieldName:      "SubnetRefs",
 				SelectorFieldName: "SubnetSelector",
 			},
 			"network_configuration.security_groups": config.Reference{
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup",
 				RefFieldName:      "SecurityGroupRefs",
 				SelectorFieldName: "SecurityGroupSelector",
 			},
@@ -88,7 +88,7 @@ func Configure(p *config.Provider) {
 	p.AddResourceConfigurator("aws_ecs_capacity_provider", func(r *config.Resource) {
 		r.References = config.References{
 			"auto_scaling_group_provider.auto_scaling_group_arn": config.Reference{
-				Type:      "github.com/upbound/provider-aws/apis/autoscaling/v1beta1.AutoscalingGroup",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/autoscaling/v1beta1.AutoscalingGroup",
 				Extractor: common.PathARNExtractor,
 			},
 		}
@@ -97,7 +97,7 @@ func Configure(p *config.Provider) {
 	p.AddResourceConfigurator("aws_ecs_task_definition", func(r *config.Resource) {
 		r.References = config.References{
 			"execution_role_arn": config.Reference{
-				Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 				Extractor: common.PathARNExtractor,
 			},
 		}

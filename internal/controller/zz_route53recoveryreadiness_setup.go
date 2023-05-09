@@ -9,10 +9,10 @@ import (
 
 	"github.com/upbound/upjet/pkg/controller"
 
-	cell "github.com/upbound/provider-aws/internal/controller/route53recoveryreadiness/cell"
-	readinesscheck "github.com/upbound/provider-aws/internal/controller/route53recoveryreadiness/readinesscheck"
-	recoverygroup "github.com/upbound/provider-aws/internal/controller/route53recoveryreadiness/recoverygroup"
-	resourceset "github.com/upbound/provider-aws/internal/controller/route53recoveryreadiness/resourceset"
+	cell "github.com/spirosco/upbound-provider-aws/internal/controller/route53recoveryreadiness/cell"
+	readinesscheck "github.com/spirosco/upbound-provider-aws/internal/controller/route53recoveryreadiness/readinesscheck"
+	recoverygroup "github.com/spirosco/upbound-provider-aws/internal/controller/route53recoveryreadiness/recoverygroup"
+	resourceset "github.com/spirosco/upbound-provider-aws/internal/controller/route53recoveryreadiness/resourceset"
 )
 
 // Setup_route53recoveryreadiness creates all controllers with the supplied logger and adds them to

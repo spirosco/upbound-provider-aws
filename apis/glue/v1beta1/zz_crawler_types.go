@@ -38,7 +38,7 @@ type CatalogTargetParameters struct {
 	ConnectionName *string `json:"connectionName,omitempty" tf:"connection_name,omitempty"`
 
 	// Glue database where results are written.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/glue/v1beta1.CatalogDatabase
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/glue/v1beta1.CatalogDatabase
 	// +kubebuilder:validation:Optional
 	DatabaseName *string `json:"databaseName,omitempty" tf:"database_name,omitempty"`
 
@@ -144,7 +144,7 @@ type CrawlerParameters struct {
 	Configuration *string `json:"configuration,omitempty" tf:"configuration,omitempty"`
 
 	// Glue database where results are written.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/glue/v1beta1.CatalogDatabase
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/glue/v1beta1.CatalogDatabase
 	// +kubebuilder:validation:Optional
 	DatabaseName *string `json:"databaseName,omitempty" tf:"database_name,omitempty"`
 
@@ -193,8 +193,8 @@ type CrawlerParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/iam/v1beta1.Role
-	// +crossplane:generate:reference:extractor=github.com/upbound/provider-aws/config/common.ARNExtractor()
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role
+	// +crossplane:generate:reference:extractor=github.com/spirosco/upbound-provider-aws/config/common.ARNExtractor()
 	// +kubebuilder:validation:Optional
 	Role *string `json:"role,omitempty" tf:"role,omitempty"`
 
@@ -303,7 +303,7 @@ type JdbcTargetObservation struct {
 type JdbcTargetParameters struct {
 
 	// The name of the connection to use to connect to the JDBC target.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/glue/v1beta1.Connection
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/glue/v1beta1.Connection
 	// +kubebuilder:validation:Optional
 	ConnectionName *string `json:"connectionName,omitempty" tf:"connection_name,omitempty"`
 
@@ -376,7 +376,7 @@ type MongodbTargetObservation struct {
 type MongodbTargetParameters struct {
 
 	// The name of the connection to use to connect to the JDBC target.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/glue/v1beta1.Connection
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/glue/v1beta1.Connection
 	// +kubebuilder:validation:Optional
 	ConnectionName *string `json:"connectionName,omitempty" tf:"connection_name,omitempty"`
 

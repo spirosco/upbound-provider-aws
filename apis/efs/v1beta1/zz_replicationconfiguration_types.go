@@ -82,7 +82,7 @@ type ReplicationConfigurationParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The ID of the file system that is to be replicated.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/efs/v1beta1.FileSystem
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/efs/v1beta1.FileSystem
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	SourceFileSystemID *string `json:"sourceFileSystemId,omitempty" tf:"source_file_system_id,omitempty"`

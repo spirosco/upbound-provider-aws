@@ -7,7 +7,7 @@ package autoscaling
 import (
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for autoscaling group.
@@ -23,7 +23,7 @@ func Configure(p *config.Provider) {
 		}
 
 		r.References["vpc_zone_identifier"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 		}
 		delete(r.References, "launch_template.version")
 		r.UseAsync = true
@@ -33,13 +33,13 @@ func Configure(p *config.Provider) {
 			Type: "AutoscalingGroup",
 		}
 		r.References["alb_target_group_arn"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/elbv2/v1beta1.LBTargetGroup",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/elbv2/v1beta1.LBTargetGroup",
 			Extractor: common.PathARNExtractor,
 		}
 	})
 	p.AddResourceConfigurator("aws_autoscaling_group_tag", func(r *config.Resource) {
 		r.References["autoscaling_group_name"] = config.Reference{
-			Type: "github.com/upbound/provider-aws/apis/autoscaling/v1beta1.AutoscalingGroup",
+			Type: "github.com/spirosco/upbound-provider-aws/apis/autoscaling/v1beta1.AutoscalingGroup",
 		}
 	})
 }

@@ -37,7 +37,7 @@ type UsagePlanKeyObservation struct {
 type UsagePlanKeyParameters struct {
 
 	// Identifier of the API key resource.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/apigateway/v1beta1.APIKey
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/apigateway/v1beta1.APIKey
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	KeyID *string `json:"keyId,omitempty" tf:"key_id,omitempty"`
@@ -60,7 +60,7 @@ type UsagePlanKeyParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// Id of the usage plan resource representing to associate the key to.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/apigateway/v1beta1.UsagePlan
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/apigateway/v1beta1.UsagePlan
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	UsagePlanID *string `json:"usagePlanId,omitempty" tf:"usage_plan_id,omitempty"`

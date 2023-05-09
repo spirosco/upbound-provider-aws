@@ -9,7 +9,7 @@ import (
 
 	"github.com/upbound/upjet/pkg/config"
 
-	"github.com/upbound/provider-aws/config/common"
+	"github.com/spirosco/upbound-provider-aws/config/common"
 )
 
 // Configure adds configurations for eks group.
@@ -17,16 +17,16 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 	p.AddResourceConfigurator("aws_eks_cluster", func(r *config.Resource) {
 		r.References = config.References{
 			"role_arn": {
-				Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 				Extractor: common.PathARNExtractor,
 			},
 			"vpc_config.subnet_ids": {
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 				RefFieldName:      "SubnetIDRefs",
 				SelectorFieldName: "SubnetIDSelector",
 			},
 			"vpc_config.security_group_ids": {
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup",
 				RefFieldName:      "SecurityGroupIDRefs",
 				SelectorFieldName: "SecurityGroupIDSelector",
 			},
@@ -39,16 +39,16 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 			Extractor: "ExternalNameIfClusterActive()",
 		}
 		r.References["node_role_arn"] = config.Reference{
-			Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+			Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 			Extractor: common.PathARNExtractor,
 		}
 		r.References["remote_access.source_security_group_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.SecurityGroup",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.SecurityGroup",
 			RefFieldName:      "SourceSecurityGroupIDRefs",
 			SelectorFieldName: "SourceSecurityGroupIDSelector",
 		}
 		r.References["subnet_ids"] = config.Reference{
-			Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+			Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 			RefFieldName:      "SubnetIDRefs",
 			SelectorFieldName: "SubnetIDSelector",
 		}
@@ -73,11 +73,11 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 				Type: "Cluster",
 			},
 			"pod_execution_role_arn": {
-				Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 				Extractor: common.PathARNExtractor,
 			},
 			"subnet_ids": {
-				Type:              "github.com/upbound/provider-aws/apis/ec2/v1beta1.Subnet",
+				Type:              "github.com/spirosco/upbound-provider-aws/apis/ec2/v1beta1.Subnet",
 				RefFieldName:      "SubnetIDRefs",
 				SelectorFieldName: "SubnetIDSelector",
 			},
@@ -90,7 +90,7 @@ func Configure(p *config.Provider) { // nolint:gocyclo
 				Type: "Cluster",
 			},
 			"service_account_role_arn": {
-				Type:      "github.com/upbound/provider-aws/apis/iam/v1beta1.Role",
+				Type:      "github.com/spirosco/upbound-provider-aws/apis/iam/v1beta1.Role",
 				Extractor: common.PathARNExtractor,
 			},
 		}

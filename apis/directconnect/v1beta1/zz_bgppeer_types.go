@@ -78,7 +78,7 @@ type BGPPeerParameters struct {
 	Region *string `json:"region" tf:"-"`
 
 	// The ID of the Direct Connect virtual interface on which to create the BGP peer.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/directconnect/v1beta1.PrivateVirtualInterface
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/directconnect/v1beta1.PrivateVirtualInterface
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	VirtualInterfaceID *string `json:"virtualInterfaceId,omitempty" tf:"virtual_interface_id,omitempty"`

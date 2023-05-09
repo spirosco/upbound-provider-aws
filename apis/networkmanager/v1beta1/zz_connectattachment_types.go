@@ -80,7 +80,7 @@ type ConnectAttachmentParameters struct {
 	CoreNetworkIDSelector *v1.Selector `json:"coreNetworkIdSelector,omitempty" tf:"-"`
 
 	// The Region where the edge is located.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/networkmanager/v1beta1.VPCAttachment
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/networkmanager/v1beta1.VPCAttachment
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractParamPath("edge_location",true)
 	// +kubebuilder:validation:Optional
 	EdgeLocation *string `json:"edgeLocation,omitempty" tf:"edge_location,omitempty"`
@@ -107,7 +107,7 @@ type ConnectAttachmentParameters struct {
 	Tags map[string]*string `json:"tags,omitempty" tf:"tags,omitempty"`
 
 	// The ID of the attachment between the two connections.
-	// +crossplane:generate:reference:type=github.com/upbound/provider-aws/apis/networkmanager/v1beta1.VPCAttachment
+	// +crossplane:generate:reference:type=github.com/spirosco/upbound-provider-aws/apis/networkmanager/v1beta1.VPCAttachment
 	// +crossplane:generate:reference:extractor=github.com/upbound/upjet/pkg/resource.ExtractResourceID()
 	// +kubebuilder:validation:Optional
 	TransportAttachmentID *string `json:"transportAttachmentId,omitempty" tf:"transport_attachment_id,omitempty"`
